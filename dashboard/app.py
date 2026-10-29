@@ -75,6 +75,21 @@ def format_percent_br(value: float | None) -> str:
     return f"{float(value):.1f}%".replace(".", ",")
 
 
+def format_decimal_br(value: float | None, decimals: int = 2) -> str:
+    """Formata valor float no padrão brasileiro com vírgula decimal (ex: 4,85).
+
+    Args:
+        value: Valor numérico a ser formatado.
+        decimals: Quantidade de casas decimais.
+
+    Returns:
+        String com casas decimais separadas por vírgula.
+    """
+    if value is None or pd.isna(value):
+        return "-"
+    return f"{float(value):.{decimals}f}".replace(".", ",")
+
+
 def load_kpi_summary(
     specialty_filter: str | None = None,
     conn: duckdb.DuckDBPyConnection | None = None,
@@ -271,6 +286,23 @@ def render_dashboard() -> None:
         "> *Monitoramento estratégico de GMV, eficiência operacional de serviços residenciais "
         "e qualidade dos prestadores em tempo real.*"
     )
+    st.markdown(
+        """
+        <style>
+        /* Ajuste do tamanho e quebra das métricas para evitar reticências (...) */
+        div[data-testid="stMetricValue"] {
+            font-size: 1.55rem !important;
+            white-space: nowrap !important;
+            overflow: visible !important;
+        }
+        div[data-testid="stMetricLabel"] {
+            font-size: 0.90rem !important;
+            font-weight: 600 !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
     st.write("---")
 
     # Barra lateral de filtros interativos
@@ -308,7 +340,7 @@ def render_dashboard() -> None:
         f" ({selected_specialty})" if selected_specialty != "Todas" else " (Geral)"
     )
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5 = st.columns([1.35, 0.9, 1.0, 1.15, 0.9])
     col1.metric(f"💰 GMV Total{filtro_label}", format_currency_brl(total_gmv))
     col2.metric(f"📋 Ordens Totais{filtro_label}", format_number_br(total_orders))
     col3.metric(
@@ -377,7 +409,7 @@ def render_dashboard() -> None:
                         "Taxa de Conclusão (%)": lambda x: format_percent_br(x),
                         "GMV Total (R$)": lambda x: format_currency_brl(x),
                         "Ticket Médio (R$)": lambda x: format_currency_brl(x),
-                        "CSAT Médio": "{:.2f}".replace(".", ","),
+                        "CSAT Médio": lambda x: format_decimal_br(x, 2),
                         "Incidentes Reportados": lambda x: format_number_br(x),
                     }
                 ),
@@ -459,7 +491,7 @@ def render_dashboard() -> None:
                         "Ordens Concluídas": lambda x: format_number_br(x),
                         "Taxa de Conclusão (%)": lambda x: format_percent_br(x),
                         "GMV Gerado (R$)": lambda x: format_currency_brl(x),
-                        "CSAT Médio": "{:.2f}".replace(".", ","),
+                        "CSAT Médio": lambda x: format_decimal_br(x, 2),
                         "Total de Incidentes": lambda x: format_number_br(x),
                         "Ativo?": lambda x: "Sim" if x else "Não",
                     }
@@ -511,8 +543,8 @@ def render_dashboard() -> None:
                         "Cancelados": lambda x: format_number_br(x),
                         "Taxa de Resolução (%)": lambda x: format_percent_br(x),
                         "Taxa de Cancelamento (%)": lambda x: format_percent_br(x),
-                        "Tempo Médio de Ciclo (Dias)": lambda x: f"{x:.1f}".replace(
-                            ".", ","
+                        "Tempo Médio de Ciclo (Dias)": lambda x: format_decimal_br(
+                            x, 1
                         ),
                     }
                 ),

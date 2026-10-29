@@ -14,6 +14,7 @@ import pytest
 
 from dashboard.app import (
     format_currency_brl,
+    format_decimal_br,
     format_number_br,
     format_percent_br,
     load_all_specialties,
@@ -60,6 +61,11 @@ def test_format_helpers_ptbr() -> None:
     assert format_percent_br(71.8) == "71,8%"
     assert format_percent_br(100.0) == "100,0%"
     assert format_percent_br(None) == "0,0%"
+
+    # Decimal
+    assert format_decimal_br(4.85, 2) == "4,85"
+    assert format_decimal_br(3.9, 1) == "3,9"
+    assert format_decimal_br(None) == "-"
 
 
 def test_run_pipeline_orchestrator(tmp_path: Path) -> None:
