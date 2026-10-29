@@ -1,0 +1,22 @@
+# Diretórios de implantação interna
+_implantacao/
+
+# Ambiente Python e uv
+.venv/
+__pycache__/
+*.py[cod]
+
+# Banco binário DuckDB (os CSVs em data/raw/ e queries em data/queries/ sobem ao Git)
+data/warehouse/
+*.duckdb
+*.duckdb.wal
+
+# Relatórios e caches de testes
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Variáveis locais
+.env
+.DS_Store

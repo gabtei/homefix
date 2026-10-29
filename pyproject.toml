@@ -1,0 +1,26 @@
+[project]
+name = "homefix"
+version = "0.1.0"
+description = "Marketplace de Serviços Residenciais & Comerciais - Analytics & MCP AI"
+readme = "README.md"
+authors = [
+    { name = "Gabriel Teixeira", email = "gt2kdez+cs@gmail.com" }
+]
+requires-python = ">=3.12.10"
+dependencies = [
+    "duckdb>=2.0.0",
+    "mcp>=2.3.0",
+    "pandas>=3.1.0",
+    "pydantic>=2.14.2",
+    "streamlit>=1.66.1",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.17.3",
+]
