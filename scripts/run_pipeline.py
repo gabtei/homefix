@@ -87,4 +87,3 @@ if __name__ == "__main__":
     print("  --- Camada Gold ---")
     for tbl, count in report["gold"].items():
         print(f"    * {tbl}: {count} linhas")
-
