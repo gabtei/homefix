@@ -1,7 +1,8 @@
-"""Suíte de testes para a camada de IA Agêntica e Servidor MCP HomeFix.
+"""Suíte de testes para o Servidor DuckDB MCP e o Agente Analítico HomeFix.
 
-Valida a execução das ferramentas analíticas, conformidade do servidor MCP
-com o catálogo de tools, e o comportamento do agente OperationalDiagnosticBot.
+Valida as ferramentas nativas de banco de dados (execute_query, list_tables,
+describe_table, get_schema_context), o catálogo do servidor MCP e a tradução
+de perguntas em linguagem natural para queries no DuckDB.
 """
 
 from __future__ import annotations
@@ -13,21 +14,19 @@ from pathlib import Path
 import duckdb
 import pytest
 
-from agents.bot import OperationalDiagnosticBot
+from agents.bot import DuckDBAnalystBot
 from agents.mcp_server import (
     server,
-    tool_diagnose_marketplace_health,
-    tool_get_contractor_scorecard,
-    tool_get_gmv_by_specialty,
-    tool_get_incidents_churn,
-    tool_get_resolution_rate,
+    tool_describe_table,
+    tool_execute_query,
+    tool_get_schema_context,
+    tool_list_tables,
 )
 from agents.tools import (
-    diagnose_marketplace_health,
-    get_contractor_scorecard,
-    get_gmv_by_specialty,
-    get_incidents_churn,
-    get_resolution_rate,
+    describe_table,
+    execute_query,
+    get_schema_context,
+    list_tables,
 )
 from scripts.bronze_ingestion import run_bronze_ingestion
 from scripts.connection import get_connection
@@ -37,7 +36,7 @@ from scripts.silver_processing import run_silver_processing
 
 @pytest.fixture
 def populated_conn() -> duckdb.DuckDBPyConnection:
-    """Fixture que retorna conexão em memória com o banco totalmente populado."""
+    """Fixture que fornece uma conexão em memória com Bronze, Silver e Gold carregadas."""
     conn = get_connection(db_path=":memory:")
     run_bronze_ingestion(raw_dir="data/raw", conn=conn)
     run_silver_processing(conn=conn)
@@ -46,189 +45,185 @@ def populated_conn() -> duckdb.DuckDBPyConnection:
     conn.close()
 
 
-def test_tools_gmv_by_specialty(populated_conn: duckdb.DuckDBPyConnection) -> None:
-    """Valida a ferramenta de GMV por especialidade."""
-    res_all = get_gmv_by_specialty(conn=populated_conn)
-    assert len(res_all) > 0
-    assert "total_gmv" in res_all[0]
-    assert "share_of_total_gmv_pct" in res_all[0]
-
-    # Filtro min_orders
-    res_filtered = get_gmv_by_specialty(min_orders=1000, conn=populated_conn)
-    assert len(res_filtered) == 0
-
-
-def test_tools_contractor_scorecard(populated_conn: duckdb.DuckDBPyConnection) -> None:
-    """Valida a ferramenta de scorecard de prestadores."""
-    res_all = get_contractor_scorecard(conn=populated_conn)
-    assert len(res_all) == 30
-
-    # Filtro por especialidade existente
-    first_spec = res_all[0]["specialty"]
-    res_spec = get_contractor_scorecard(specialty=first_spec, conn=populated_conn)
-    assert len(res_spec) > 0
-    assert all(r["specialty"].lower() == first_spec.lower() for r in res_spec)
-
-    # Filtro por nota mínima
-    res_rating = get_contractor_scorecard(min_rating=4.5, conn=populated_conn)
-    assert all(r["avg_rating"] >= 4.5 for r in res_rating)
-
-
-def test_tools_resolution_rate(populated_conn: duckdb.DuckDBPyConnection) -> None:
-    """Valida a ferramenta de taxa de resolução."""
-    res = get_resolution_rate(conn=populated_conn)
-    assert len(res) > 0
-    assert "resolution_rate_pct" in res[0]
-    assert "cancellation_rate_pct" in res[0]
-
-    # Filtro por cancelamento mínimo alto
-    res_high = get_resolution_rate(min_cancellation_pct=99.0, conn=populated_conn)
-    assert len(res_high) == 0
-
-
-def test_tools_incidents_churn(populated_conn: duckdb.DuckDBPyConnection) -> None:
-    """Valida a ferramenta de incidentes e churn."""
-    res = get_incidents_churn(conn=populated_conn)
-    assert len(res) > 0
-
-    # Filtro por ALTO_RISCO_CHURN
-    res_churn = get_incidents_churn(
-        churn_status="ALTO_RISCO_CHURN", conn=populated_conn
+def test_tools_execute_query(populated_conn: duckdb.DuckDBPyConnection) -> None:
+    """Valida a execução de queries SQL no DuckDB."""
+    # Query válida
+    rows = execute_query(
+        "SELECT COUNT(*) AS total FROM gold.fct_orders;", conn=populated_conn
     )
-    assert all(r["churn_risk_status"] == "ALTO_RISCO_CHURN" for r in res_churn)
+    assert len(rows) == 1
+    assert rows[0]["total"] == 500
+
+    # Query vazia
+    with pytest.raises(ValueError, match="não pode ser vazia"):
+        execute_query("   ", conn=populated_conn)
+
+    # Bloqueio de comando destrutivo
+    with pytest.raises(ValueError, match="Comando bloqueado"):
+        execute_query("DROP DATABASE homefix;", conn=populated_conn)
 
 
-def test_tools_diagnose_marketplace_health(
-    populated_conn: duckdb.DuckDBPyConnection,
-) -> None:
-    """Valida o diagnóstico executivo integrado."""
-    diag = diagnose_marketplace_health(conn=populated_conn)
-    assert "summary" in diag
-    assert "alerts" in diag
-    assert "top_specialties_by_gmv" in diag
-    assert diag["summary"]["total_gmv"] > 0
-    assert diag["summary"]["total_orders"] == 500
+def test_tools_list_tables(populated_conn: duckdb.DuckDBPyConnection) -> None:
+    """Valida listagem de tabelas e contagem de registros."""
+    tables = list_tables(conn=populated_conn)
+    assert len(tables) >= 10
+    schemas = {t["table_schema"] for t in tables}
+    assert {"bronze", "silver", "gold"}.issubset(schemas)
+
+    names = {f"{t['table_schema']}.{t['table_name']}" for t in tables}
+    assert "gold.fct_orders" in names
+    assert "silver.contractors" in names
+
+
+def test_tools_describe_table(populated_conn: duckdb.DuckDBPyConnection) -> None:
+    """Valida inspeção de schema de tabela específica."""
+    cols = describe_table("gold.fct_orders", conn=populated_conn)
+    assert len(cols) > 5
+    col_names = [c["column_name"] for c in cols]
+    assert "order_id" in col_names
+    assert "total_final_amount" in col_names
+
+    # Erros de validação
+    with pytest.raises(ValueError, match="não pode ser vazio"):
+        describe_table("", conn=populated_conn)
+
+    with pytest.raises(ValueError, match="Nome de tabela inválido"):
+        describe_table("gold.fct_orders; DROP TABLE x", conn=populated_conn)
+
+
+def test_tools_get_schema_context(populated_conn: duckdb.DuckDBPyConnection) -> None:
+    """Valida geração do catálogo de contexto para IA."""
+    ctx = get_schema_context(conn=populated_conn)
+    assert "# Catálogo de Esquemas e Tabelas do DuckDB" in ctx
+    assert "gold.fct_orders" in ctx
+    assert "silver.service_orders" in ctx
 
 
 def test_tools_disk_without_conn(tmp_path: Path) -> None:
-    """Valida as ferramentas utilizando caminho de arquivo físico sem passar conexão."""
-    db_file = tmp_path / "tools_disk.duckdb"
+    """Valida ferramentas operando sobre banco em disco sem passar conexão."""
+    db_file = tmp_path / "duckdb_tools.duckdb"
     run_bronze_ingestion(raw_dir="data/raw", db_path=db_file)
     run_silver_processing(db_path=db_file)
     run_gold_processing(db_path=db_file)
 
-    diag = diagnose_marketplace_health(db_path=db_file)
-    assert diag["summary"]["total_orders"] == 500
+    tables = list_tables(db_path=db_file)
+    assert len(tables) >= 10
+
+    desc = describe_table("silver.clients", db_path=db_file)
+    assert len(desc) > 0
 
 
-def test_mcp_server_tools_registration() -> None:
-    """Garante que todas as 5 ferramentas MCP foram devidamente registradas."""
+def test_mcp_server_registration() -> None:
+    """Garante que o servidor MCP registrou as 4 ferramentas do DuckDB."""
     tools = asyncio.run(server.list_tools())
     tool_names = {t.name for t in tools}
-    expected_tools = {
-        "tool_get_gmv_by_specialty",
-        "tool_get_contractor_scorecard",
-        "tool_get_resolution_rate",
-        "tool_get_incidents_churn",
-        "tool_diagnose_marketplace_health",
+    expected = {
+        "tool_execute_query",
+        "tool_list_tables",
+        "tool_describe_table",
+        "tool_get_schema_context",
     }
-    assert expected_tools.issubset(tool_names)
+    assert expected.issubset(tool_names)
 
 
 def test_mcp_server_tool_calls() -> None:
-    """Testa a invocação direta das funções expostas pelo MCP Server."""
-    # 1. GMV
-    gmv_raw = tool_get_gmv_by_specialty(min_orders=0)
-    gmv_json = json.loads(gmv_raw)
-    assert isinstance(gmv_json, list)
+    """Testa invocação direta das ferramentas no DuckDB MCP Server."""
+    # List tables
+    raw_tables = tool_list_tables()
+    data_tables = json.loads(raw_tables)
+    assert isinstance(data_tables, (list, dict))
 
-    # 2. Scorecard
-    score_raw = tool_get_contractor_scorecard(specialty="", min_rating=0.0)
-    score_json = json.loads(score_raw)
-    assert isinstance(score_json, list)
+    # Describe table
+    raw_desc = tool_describe_table("gold.fct_orders")
+    data_desc = json.loads(raw_desc)
+    assert isinstance(data_desc, (list, dict))
 
-    # 3. Resolução
-    res_raw = tool_get_resolution_rate(min_cancellation_pct=0.0)
-    res_json = json.loads(res_raw)
-    assert isinstance(res_json, list)
+    # Execute query
+    raw_query = tool_execute_query("SELECT 1 AS num;")
+    data_query = json.loads(raw_query)
+    assert data_query[0]["num"] == 1
 
-    # 4. Churn
-    churn_raw = tool_get_incidents_churn(churn_status="ALTO_RISCO_CHURN")
-    churn_json = json.loads(churn_raw)
-    assert isinstance(churn_json, list)
+    # Schema context
+    ctx = tool_get_schema_context()
+    assert "Catálogo" in ctx or "Erro" not in ctx
 
-    # 5. Diagnóstico
-    diag_raw = tool_diagnose_marketplace_health()
-    diag_json = json.loads(diag_raw)
-    assert "summary" in diag_json
+    # Teste de ramos de erro no MCP Server
+    err_desc = json.loads(tool_describe_table(""))
+    assert "error" in err_desc
+
+    err_list = json.loads(tool_list_tables())
+    assert isinstance(err_list, (list, dict))
+
+    # Erro de SQL tratado no MCP
+    raw_err = tool_execute_query("SELECT * FROM tabela_que_nao_existe_xyz;")
+    data_err = json.loads(raw_err)
+    assert "error" in data_err
 
 
-def test_operational_diagnostic_bot(populated_conn: duckdb.DuckDBPyConnection) -> None:
-    """Valida a geração de relatórios e atendimento a perguntas pelo agente inteligente."""
-    bot = OperationalDiagnosticBot()
+def test_duckdb_analyst_bot_ask(populated_conn: duckdb.DuckDBPyConnection) -> None:
+    """Testa o bot traduzindo perguntas em linguagem natural para SQL e executando no DuckDB."""
+    bot = DuckDBAnalystBot()
 
-    # Relatório executivo
-    report = bot.generate_executive_diagnosis(conn=populated_conn)
-    assert "# 📋 Relatório de Diagnóstico Operacional" in report
-    assert "Recomendações Estratégicas" in report
-    assert "GMV" in report
+    # Pergunta sobre GMV
+    res_gmv = bot.ask("Qual o GMV por especialidade?", conn=populated_conn)
+    assert "total_gmv" in res_gmv["sql"].lower()
+    assert len(res_gmv["results"]) > 0
+    assert "✅" in res_gmv["answer"]
 
-    # Teste de roteamento de consultas em linguagem natural
-    resp_gmv = bot.answer_query("Qual o GMV por especialidade?", conn=populated_conn)
-    assert "Análise de GMV" in resp_gmv
-
-    resp_contractor = bot.answer_query(
-        "Mostre o ranking de prestadores", conn=populated_conn
+    # Pergunta sobre prestadores
+    res_pres = bot.ask(
+        "Quem são os melhores prestadores em nota e ranking?", conn=populated_conn
     )
-    assert "Ranking dos Principais Prestadores" in resp_contractor
+    assert "dim_contractors" in res_pres["sql"].lower()
+    assert len(res_pres["results"]) > 0
 
-    resp_cancel = bot.answer_query(
+    # Pergunta sobre cancelamentos
+    res_cancel = bot.ask(
         "Qual a taxa de cancelamento e resolução?", conn=populated_conn
     )
-    assert "Taxa de Resolução" in resp_cancel
+    assert "resolution_rate_pct" in res_cancel["sql"].lower()
+    assert len(res_cancel["results"]) > 0
 
-    resp_churn = bot.answer_query(
-        "Temos problemas de churn ou incidentes?", conn=populated_conn
+    # Pergunta sobre churn/incidentes
+    res_churn = bot.ask(
+        "Quais clientes estão em risco de churn por incidentes?", conn=populated_conn
     )
-    assert "Alerta de Incidentes e Evasão" in resp_churn
+    assert "incident_reported" in res_churn["sql"].lower()
 
-    resp_default = bot.answer_query(
-        "Gere um diagnóstico geral do sistema", conn=populated_conn
+    # Pergunta sobre tabelas
+    res_tables = bot.ask("Quais tabelas existem?", conn=populated_conn)
+    assert "information_schema" in res_tables["sql"].lower()
+
+    # Pergunta sobre clientes
+    res_clients = bot.ask(
+        "Quais são os maiores clientes em faturamento?", conn=populated_conn
     )
-    assert "Relatório de Diagnóstico Operacional" in resp_default
+    assert "dim_clients" in res_clients["sql"].lower()
+
+    # SQL direto
+    res_direct = bot.ask(
+        "SELECT COUNT(*) AS total_itens FROM silver.service_items;", conn=populated_conn
+    )
+    assert (
+        res_direct["sql"] == "SELECT COUNT(*) AS total_itens FROM silver.service_items;"
+    )
+    assert res_direct["results"][0]["total_itens"] > 500
+
+    # Fallback
+    res_fall = bot.ask("Me dê um resumo geral da empresa", conn=populated_conn)
+    assert "kpi_monthly_summary" in res_fall["sql"].lower()
+
+    # Tratamento de erro
+    res_bad = bot.ask("SELECT * FROM tabela_fantasma_xyz;", conn=populated_conn)
+    assert "⚠️" in res_bad["answer"]
+    assert res_bad["error"] is not None
 
 
-def test_bot_with_mocked_clean_alerts(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Valida relatório do bot quando não há alertas operacionais críticos."""
-    bot = OperationalDiagnosticBot()
+def test_duckdb_analyst_bot_helpers(populated_conn: duckdb.DuckDBPyConnection) -> None:
+    """Testa métodos utilitários do bot de inspeção e listagem."""
+    bot = DuckDBAnalystBot()
+    tables = bot.get_available_tables(conn=populated_conn)
+    assert len(tables) >= 10
 
-    def mock_clean_health(**kwargs: object) -> dict:
-        return {
-            "summary": {
-                "total_gmv": 50000.0,
-                "total_orders": 100,
-                "completed_orders": 95,
-                "global_resolution_pct": 95.0,
-                "total_specialties": 5,
-            },
-            "alerts": {
-                "critical_categories_count": 0,
-                "critical_categories": [],
-                "underperforming_contractors_count": 0,
-                "underperforming_contractors": [],
-                "churn_risk_clients_count": 0,
-            },
-            "top_specialties_by_gmv": [
-                {
-                    "specialty": "Elétrica",
-                    "total_gmv": 20000.0,
-                    "share_of_total_gmv_pct": 40.0,
-                    "avg_ticket": 400.0,
-                }
-            ],
-        }
-
-    monkeypatch.setattr("agents.bot.diagnose_marketplace_health", mock_clean_health)
-    report = bot.generate_executive_diagnosis()
-    assert "Nenhuma categoria com taxa de cancelamento superior a 15%" in report
-    assert "Nenhum prestador crítico identificado" in report
+    desc = bot.inspect_table("silver.clients", conn=populated_conn)
+    assert len(desc) > 0

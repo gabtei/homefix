@@ -1,7 +1,8 @@
-"""Servidor Model Context Protocol (MCP) da plataforma HomeFix.
+"""Servidor Model Context Protocol (MCP) do DuckDB para o HomeFix.
 
-Disponibiliza ferramentas de análise de negócio, scorecards e diagnóstico
-operacional sobre o motor DuckDB para agentes de inteligência artificial.
+Disponibiliza ferramentas diretas de exploração e execução SQL sobre o banco
+de dados DuckDB local, permitindo que LLMs e agentes de IA consultem dados
+e traduzam perguntas em consultas SQL.
 """
 
 from __future__ import annotations
@@ -14,83 +15,76 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
+import duckdb
 from mcp.server.mcpserver import MCPServer
 
 from agents.tools import (
-    diagnose_marketplace_health,
-    get_contractor_scorecard,
-    get_gmv_by_specialty,
-    get_incidents_churn,
-    get_resolution_rate,
+    describe_table,
+    execute_query,
+    get_schema_context,
+    list_tables,
 )
 
 server = MCPServer(
-    name="homefix-analytics",
+    name="duckdb-homefix",
     instructions=(
-        "Servidor MCP para análise e diagnóstico da operação do marketplace HomeFix. "
-        "Permite consultar indicadores de GMV, taxas de resolução, scorecard de prestadores "
-        "e clientes sob risco de evasão (churn)."
+        "Servidor MCP do DuckDB para a plataforma HomeFix. "
+        "Permite listar esquemas e tabelas (bronze, silver, gold), descrever colunas "
+        "e executar consultas SQL dinâmicas (SELECT) para responder a dúvidas de negócio."
     ),
 )
 
 
 @server.tool()
-def tool_get_gmv_by_specialty(min_orders: int = 0) -> str:
-    """Retorna métricas de volume bruto (GMV) e representatividade (%) por especialidade.
+def tool_execute_query(query: str) -> str:
+    """Executa uma consulta SQL arbitrária no banco de dados DuckDB e retorna os dados em JSON.
 
     Args:
-        min_orders: Volume mínimo de ordens para filtragem.
+        query: Consulta SQL a ser executada (ex: 'SELECT * FROM gold.fct_orders LIMIT 5;').
     """
-    data = get_gmv_by_specialty(min_orders=min_orders)
-    return json.dumps(data, ensure_ascii=False, indent=2, default=str)
+    try:
+        data = execute_query(query=query)
+        return json.dumps(data, ensure_ascii=False, indent=2, default=str)
+    except (duckdb.Error, ValueError, RuntimeError) as exc:
+        return json.dumps({"error": str(exc)}, ensure_ascii=False, indent=2)
 
 
 @server.tool()
-def tool_get_contractor_scorecard(specialty: str = "", min_rating: float = 0.0) -> str:
-    """Retorna scorecard e rankings de prestadores calculados com Window Functions.
-
-    Args:
-        specialty: Nome da especialidade para filtro opcional (ex: 'Elétrica').
-        min_rating: Nota média mínima de avaliação para filtro.
-    """
-    filter_spec = specialty.strip() if specialty.strip() else None
-    data = get_contractor_scorecard(specialty=filter_spec, min_rating=min_rating)
-    return json.dumps(data, ensure_ascii=False, indent=2, default=str)
+def tool_list_tables() -> str:
+    """Lista todos os esquemas e tabelas existentes no banco de dados DuckDB."""
+    try:
+        data = list_tables()
+        return json.dumps(data, ensure_ascii=False, indent=2, default=str)
+    except (duckdb.Error, ValueError, RuntimeError) as exc:
+        return json.dumps({"error": str(exc)}, ensure_ascii=False, indent=2)
 
 
 @server.tool()
-def tool_get_resolution_rate(min_cancellation_pct: float = 0.0) -> str:
-    """Retorna taxas de resolução, cancelamento e lead time por categoria de serviço.
+def tool_describe_table(table_name: str) -> str:
+    """Retorna os metadados de colunas e tipos de dados de uma tabela específica no DuckDB.
 
     Args:
-        min_cancellation_pct: Filtro para retornar categorias com taxa de cancelamento >= %.
+        table_name: Nome qualificado da tabela (ex: 'gold.dim_clients' ou 'silver.service_orders').
     """
-    data = get_resolution_rate(min_cancellation_pct=min_cancellation_pct)
-    return json.dumps(data, ensure_ascii=False, indent=2, default=str)
+    try:
+        data = describe_table(table_name=table_name)
+        return json.dumps(data, ensure_ascii=False, indent=2, default=str)
+    except (duckdb.Error, ValueError, RuntimeError) as exc:
+        return json.dumps({"error": str(exc)}, ensure_ascii=False, indent=2)
 
 
 @server.tool()
-def tool_get_incidents_churn(churn_status: str = "") -> str:
-    """Retorna incidentes operacionais correlacionados a clientes em risco de abandono (churn).
-
-    Args:
-        churn_status: Filtro opcional: 'ALTO_RISCO_CHURN' ou 'RETIDO'.
-    """
-    filter_status = churn_status.strip() if churn_status.strip() else None
-    data = get_incidents_churn(churn_status=filter_status)
-    return json.dumps(data, ensure_ascii=False, indent=2, default=str)
-
-
-@server.tool()
-def tool_diagnose_marketplace_health() -> str:
-    """Gera diagnóstico analítico consolidado sobre a saúde operacional do marketplace HomeFix."""
-    data = diagnose_marketplace_health()
-    return json.dumps(data, ensure_ascii=False, indent=2, default=str)
+def tool_get_schema_context() -> str:
+    """Retorna a documentação consolidada do catálogo de esquemas e tabelas do banco DuckDB."""
+    try:
+        return get_schema_context()
+    except (duckdb.Error, ValueError, RuntimeError) as exc:
+        return f"Erro ao obter catálogo: {exc}"
 
 
 if __name__ == "__main__":
     print(
-        "[OK] Iniciando servidor MCP HomeFix (transporte padrão stdio)...",
+        "[OK] Servidor DuckDB MCP HomeFix iniciado (transporte stdio)...",
         file=sys.stderr,
     )
     server.run()

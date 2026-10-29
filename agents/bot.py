@@ -1,8 +1,7 @@
-"""Agente inteligente de diagnóstico operacional para o marketplace HomeFix.
+"""Agente analítico de linguagem natural para o DuckDB no ecossistema HomeFix.
 
-Interpreta métricas analíticas provenientes das ferramentas MCP e gera
-relatórios de saúde operacional, triagem de incidentes e planos de ação
-para contenção de churn e otimização de GMV.
+Interpreta perguntas de negócio dos usuários, traduz em consultas SQL
+otimizadas para o DuckDB e retorna respostas ricas e explicativas em Markdown.
 """
 
 from __future__ import annotations
@@ -17,186 +16,186 @@ if str(ROOT_DIR) not in sys.path:
 
 import duckdb
 
-from agents.tools import (
-    diagnose_marketplace_health,
-    get_contractor_scorecard,
-    get_gmv_by_specialty,
-    get_incidents_churn,
-    get_resolution_rate,
-)
+from agents.tools import describe_table, execute_query, list_tables
 
 
-class OperationalDiagnosticBot:
-    """Agente especialista em diagnóstico de performance e operações do HomeFix."""
+class DuckDBAnalystBot:
+    """Agente especialista em interpretar perguntas em linguagem natural e consultar o DuckDB."""
 
     def __init__(self, db_path: str | Path | None = None) -> None:
-        """Inicializa o agente com o caminho opcional do banco de dados.
+        """Inicializa o bot com o caminho opcional do banco DuckDB.
 
         Args:
-            db_path: Caminho do arquivo DuckDB ou None para usar o padrão.
+            db_path: Caminho do arquivo de banco ou ':memory:'.
         """
         self.db_path = db_path
 
-    def run_health_check(
+    def translate_to_sql(self, question: str) -> str:
+        """Traduz uma pergunta em linguagem natural para uma query SQL DuckDB.
+
+        Se o prompt já for uma query SQL válida (iniciando com SELECT, WITH, DESCRIBE ou SHOW),
+        retorna a query diretamente. Caso contrário, aplica heurísticas sobre o catálogo.
+
+        Args:
+            question: Pergunta em português ou comando SQL.
+
+        Returns:
+            Declaração SQL compatível com o DuckDB.
+        """
+        q = question.strip()
+        q_upper = q.upper()
+
+        # Caso seja uma query SQL direta digitada pelo operador
+        if q_upper.startswith(("SELECT", "WITH", "DESCRIBE", "SHOW", "EXPLAIN")):
+            return q
+
+        q_lower = q.lower()
+
+        # Mapeamento semântico de perguntas comuns para SQL no DuckDB
+        if any(w in q_lower for w in ["tabela", "quais tabelas", "esquema"]):
+            return (
+                "SELECT table_schema, table_name, table_type "
+                "FROM information_schema.tables "
+                "WHERE table_schema IN ('bronze', 'silver', 'gold') "
+                "ORDER BY table_schema, table_name;"
+            )
+
+        if any(
+            w in q_lower
+            for w in [
+                "top clientes",
+                "maiores clientes",
+                "melhores clientes",
+                "gasto por cliente",
+            ]
+        ):
+            return (
+                "SELECT client_id, client_name, client_city, "
+                "total_orders_placed, completed_orders, total_spend, avg_order_value "
+                "FROM gold.dim_clients "
+                "ORDER BY total_spend DESC "
+                "LIMIT 10;"
+            )
+
+        if any(
+            w in q_lower for w in ["gmv", "faturamento", "receita", "especialidade"]
+        ):
+            return (
+                "SELECT service_category AS specialty, "
+                "COUNT(order_id) AS total_orders, "
+                "COUNT(CASE WHEN order_status = 'CONCLUIDO' THEN 1 END) AS completed_orders, "
+                "ROUND(COALESCE(SUM(CASE WHEN order_status = 'CONCLUIDO' THEN total_final_amount ELSE 0 END), 0), 2) AS total_gmv, "
+                "ROUND(COALESCE(AVG(CASE WHEN order_status = 'CONCLUIDO' THEN total_final_amount END), 0), 2) AS avg_ticket "
+                "FROM silver.service_orders "
+                "GROUP BY service_category "
+                "ORDER BY total_gmv DESC;"
+            )
+
+        if any(
+            w in q_lower
+            for w in [
+                "prestador",
+                "ranking",
+                "scorecard",
+                "melhor",
+                "nota",
+                "avaliacao",
+            ]
+        ):
+            return (
+                "SELECT contractor_id, contractor_name, specialty, city, "
+                "total_orders_assigned, completed_orders, completion_rate_pct, "
+                "total_gmv_generated, avg_rating, incidents_count "
+                "FROM gold.dim_contractors "
+                "ORDER BY total_gmv_generated DESC, avg_rating DESC "
+                "LIMIT 10;"
+            )
+
+        if any(
+            w in q_lower for w in ["cancelamento", "resolucao", "taxa", "eficiencia"]
+        ):
+            return (
+                "SELECT service_category, "
+                "COUNT(*) AS total_orders, "
+                "COUNT(CASE WHEN order_status = 'CONCLUIDO' THEN 1 END) AS completed_orders, "
+                "COUNT(CASE WHEN order_status = 'CANCELADO' THEN 1 END) AS canceled_orders, "
+                "ROUND((COUNT(CASE WHEN order_status = 'CONCLUIDO' THEN 1 END)::DOUBLE / COUNT(*)) * 100, 2) AS resolution_rate_pct, "
+                "ROUND((COUNT(CASE WHEN order_status = 'CANCELADO' THEN 1 END)::DOUBLE / COUNT(*)) * 100, 2) AS cancellation_rate_pct "
+                "FROM silver.service_orders "
+                "GROUP BY service_category "
+                "ORDER BY resolution_rate_pct DESC;"
+            )
+
+        if any(w in q_lower for w in ["churn", "incidente", "reclamacao", "risco"]):
+            return (
+                "SELECT so.order_id, cl.client_name, cl.client_city, co.contractor_name, "
+                "so.service_category, r.rating, r.incident_type, r.review_comment "
+                "FROM silver.service_orders so "
+                "JOIN silver.clients cl ON so.client_id = cl.client_id "
+                "JOIN silver.contractors co ON so.contractor_id = co.contractor_id "
+                "JOIN silver.reviews r ON so.order_id = r.order_id "
+                "WHERE r.incident_reported = TRUE "
+                "ORDER BY so.order_date DESC "
+                "LIMIT 10;"
+            )
+
+        # Fallback padrão: sumário mensal do marketplace
+        return (
+            "SELECT * FROM gold.kpi_monthly_summary ORDER BY order_month DESC LIMIT 6;"
+        )
+
+    def ask(
         self,
+        question: str,
         conn: duckdb.DuckDBPyConnection | None = None,
     ) -> dict[str, Any]:
-        """Executa a checagem consolidada de saúde da operação.
+        """Processa a pergunta do usuário, gera SQL, executa no DuckDB e formata a resposta.
 
         Args:
-            conn: Conexão opcional com DuckDB.
+            question: Pergunta em linguagem natural ou consulta SQL.
+            conn: Conexão ativa opcional.
 
         Returns:
-            Dicionário com diagnóstico estruturado.
+            Dicionário com a query gerada, dados brutos e texto de resposta em Markdown.
         """
-        return diagnose_marketplace_health(db_path=self.db_path, conn=conn)
+        sql = self.translate_to_sql(question)
+        try:
+            results = execute_query(sql, conn=conn, db_path=self.db_path)
+            error = None
+        except (duckdb.Error, ValueError, RuntimeError) as exc:
+            results = []
+            error = str(exc)
 
-    def generate_executive_diagnosis(
+        if error:
+            answer = f"⚠️ **Erro na execução da consulta SQL:**\n```sql\n{sql}\n```\n**Detalhe:** {error}"
+        elif not results:
+            answer = f"ℹ️ A consulta foi executada com sucesso, mas nenhum registro foi retornado.\n```sql\n{sql}\n```"
+        else:
+            total_rows = len(results)
+            answer = (
+                f"✅ **Consulta executada com sucesso no DuckDB** ({total_rows} registros retornados):\n\n"
+                f"```sql\n{sql}\n```\n\n"
+            )
+
+        return {
+            "question": question,
+            "sql": sql,
+            "results": results,
+            "error": error,
+            "answer": answer,
+        }
+
+    def get_available_tables(
         self,
         conn: duckdb.DuckDBPyConnection | None = None,
-    ) -> str:
-        """Elabora um relatório executivo formal em Markdown para a diretoria.
+    ) -> list[dict[str, Any]]:
+        """Retorna a lista de tabelas disponíveis nos esquemas analíticos."""
+        return list_tables(db_path=self.db_path, conn=conn)
 
-        Args:
-            conn: Conexão opcional com DuckDB.
-
-        Returns:
-            String contendo o relatório executivo formatado em Markdown.
-        """
-        data = self.run_health_check(conn=conn)
-        summary = data["summary"]
-        alerts = data["alerts"]
-        top_spec = data["top_specialties_by_gmv"]
-
-        # Formata destaques das especialidades líderes
-        top_spec_lines = [
-            f"- **{s['specialty']}:** R$ {s['total_gmv']:,.2f} ({s['share_of_total_gmv_pct']}% do GMV) | Ticket Médio: R$ {s['avg_ticket']:,.2f}"
-            for s in top_spec
-        ]
-        top_spec_str = "\n".join(top_spec_lines)
-
-        # Formata alertas de categorias críticas
-        if alerts["critical_categories"]:
-            crit_lines = [
-                f"- **{c['service_category']}:** Taxa de cancelamento de **{c['cancellation_rate_pct']}%** (Conclusão: {c['resolution_rate_pct']}%)"
-                for c in alerts["critical_categories"]
-            ]
-            crit_str = "\n".join(crit_lines)
-        else:
-            crit_str = "- Nenhuma categoria com taxa de cancelamento superior a 15%."
-
-        # Formata prestadores em atenção
-        if alerts["underperforming_contractors"]:
-            cont_lines = [
-                f"- **{p['contractor_name']}** ({p['specialty']}): Nota média **{p['avg_rating']}** | Incidentes: {p['total_incidents']}"
-                for p in alerts["underperforming_contractors"][:5]
-            ]
-            cont_str = "\n".join(cont_lines)
-        else:
-            cont_str = "- Nenhum prestador crítico identificado."
-
-        report = f"""# 📋 Relatório de Diagnóstico Operacional — HomeFix
-
-## 1. Visão Geral da Operação
-- **Volume Transacionado (GMV):** R$ {summary["total_gmv"]:,.2f}
-- **Total de Chamados Abertos:** {summary["total_orders"]}
-- **Chamados Concluídos com Sucesso:** {summary["completed_orders"]}
-- **Taxa Global de Resolução:** **{summary["global_resolution_pct"]}%**
-
-### 🏆 Especialidades com Maior Participação no GMV
-{top_spec_str}
-
----
-
-## 2. Indicadores em Alerta & Gargalos
-### ⚠️ Categorias com Alta Taxa de Cancelamento (> 15%)
-{crit_str}
-
-### 👤 Prestadores em Ponto de Atenção (Baixo CSAT / Múltiplos Incidentes)
-{cont_str}
-
-### 🚨 Risco de Churn Pós-Incidente
-- **{alerts["churn_risk_clients_count"]} clientes** sofreram incidentes operacionais e estão classificados como **ALTO RISCO DE CHURN** (não voltaram a comprar no marketplace após a ocorrência).
-
----
-
-## 3. Recomendações Estratégicas
-1. **Contenção Imediata de Churn:** O time de Customer Success deve contatar proativamente os {alerts["churn_risk_clients_count"]} clientes afetados por incidentes, oferecendo bonificação ou resolução assistida.
-2. **Capacitação e Credenciamento:** Revisar a alocação de profissionais em categorias com cancelamento elevado e oferecer treinamento para prestadores com CSAT abaixo de 3.5.
-3. **Expansão de Oferta:** Intensificar campanhas de aquisição nas 3 principais especialidades em GMV para maximizar o ticket médio do marketplace.
-"""
-        return report
-
-    def answer_query(
+    def inspect_table(
         self,
-        prompt: str,
+        table_name: str,
         conn: duckdb.DuckDBPyConnection | None = None,
-    ) -> str:
-        """Processa perguntas dos operadores e retorna análises personalizadas.
-
-        Args:
-            prompt: Pergunta ou comando do usuário em linguagem natural.
-            conn: Conexão opcional com DuckDB.
-
-        Returns:
-            Resposta analítica estruturada.
-        """
-        p_lower = prompt.lower()
-
-        if any(
-            w in p_lower
-            for w in ["diagnostico", "saude", "relatorio", "geral", "visao"]
-        ):
-            return self.generate_executive_diagnosis(conn=conn)
-
-        if any(
-            w in p_lower for w in ["gmv", "faturamento", "receita", "especialidade"]
-        ):
-            data = get_gmv_by_specialty(db_path=self.db_path, conn=conn)
-            total = sum(d["total_gmv"] for d in data)
-            lines = [
-                f"- **{d['specialty']}:** R$ {d['total_gmv']:,.2f} ({d['share_of_total_gmv_pct']}%) | Ordens: {d['completed_orders']}"
-                for d in data
-            ]
-            return (
-                f"### 💰 Análise de GMV por Especialidade\n\n"
-                f"**GMV Total Acumulado:** R$ {total:,.2f}\n\n" + "\n".join(lines)
-            )
-
-        if any(
-            w in p_lower
-            for w in ["prestador", "ranking", "scorecard", "avaliacao", "nota"]
-        ):
-            scorecard = get_contractor_scorecard(db_path=self.db_path, conn=conn)
-            top_5 = scorecard[:5]
-            lines = [
-                f"{i + 1}. **{p['contractor_name']}** ({p['specialty']}): Nota {p['avg_rating']} | GMV: R$ {p['total_gmv']:,.2f} | Rank na especialidade: #{p['rank_in_specialty']}"
-                for i, p in enumerate(top_5)
-            ]
-            return "### ⭐ Ranking dos Principais Prestadores\n\n" + "\n".join(lines)
-
-        if any(
-            w in p_lower for w in ["cancelamento", "resolucao", "taxa", "eficiencia"]
-        ):
-            rates = get_resolution_rate(db_path=self.db_path, conn=conn)
-            lines = [
-                f"- **{r['service_category']}:** Conclusão: {r['resolution_rate_pct']}% | Cancelamento: {r['cancellation_rate_pct']}% | Tempo médio: {r['avg_cycle_time_days']} dias"
-                for r in rates
-            ]
-            return (
-                "### ⏱️ Taxa de Resolução e Cancelamentos por Categoria\n\n"
-                + "\n".join(lines)
-            )
-
-        if any(w in p_lower for w in ["churn", "incidente", "reclamacao", "problema"]):
-            churns = get_incidents_churn(
-                churn_status="ALTO_RISCO_CHURN", db_path=self.db_path, conn=conn
-            )
-            return (
-                f"### 🚨 Alerta de Incidentes e Evasão (Churn)\n\n"
-                f"Foram identificados **{len(churns)} chamados** com incidentes graves cujos clientes encontram-se em **alto risco de abandono**. "
-                f"Recomenda-se acionamento preventivo imediato."
-            )
-
-        # Resposta padrão caso a intenção não seja específica
-        return self.generate_executive_diagnosis(conn=conn)
+    ) -> list[dict[str, Any]]:
+        """Inspeciona colunas e tipos de dados de uma tabela."""
+        return describe_table(table_name, db_path=self.db_path, conn=conn)

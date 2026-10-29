@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "homefix-analytics": {
+    "duckdb-homefix": {
       "command": "uv",
       "args": ["run", "python", "agents/mcp_server.py"],
       "env": {
