@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "homefix-analytics": {
+      "command": "uv",
+      "args": ["run", "python", "agents/mcp_server.py"],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}
