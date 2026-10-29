@@ -172,6 +172,7 @@ def test_run_pipeline_disk_without_conn(tmp_path: Path) -> None:
 
     # Conecta para conferir
     conn = get_connection(db_path=db_file, read_only=True)
-    assert conn.execute("SELECT COUNT(*) FROM silver.service_orders;").fetchone()[0] == 500
+    assert (
+        conn.execute("SELECT COUNT(*) FROM silver.service_orders;").fetchone()[0] == 500
+    )
     conn.close()
-
