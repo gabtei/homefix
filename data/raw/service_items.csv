@@ -1,0 +1,1245 @@
+item_id,order_id,item_description,item_type,quantity,unit_price,total_price
+1,1,Dobradiças com amortecedor,PARTS,2,38.55,"77,10"
+2,1,Kit de corrediças telescópicas,PARTS,3,62.20,"186,60"
+3,1,Instalação de prateleiras suspensas,Mao de Obra,1,149.10,"149,10"
+4,1,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$ 162.27,162.27
+5,2,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$ 221.64,R$221
+6,3,Carga de gás refrigerante R410A,Peça,2,R$ 195.64,R$ 391.28
+7,3,Suporte metálico condensadora,Peca,3,R$95,R$285
+8,4,Assentamento de piso cerâmico,LABOR,1,289.83,"289,83"
+9,4,Saco de cimento e argamassa,Peca,3,R$59,179.40
+10,4,Revestimento cerâmico metro quadrado,PARTS,3,R$ 79.46,238.38
+11,4,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,R$217,R$ 217.50
+12,5,Revestimento cerâmico metro quadrado,Material,3,"65,37",R$196
+13,6,Massa corrida e lixa,Peca,3,"R$ 84,41",253.23
+14,6,Aplicação de verniz em esquadrias,LABOR,1,184.10,"R$ 184,10"
+15,6,Lata de tinta acrílica fosca 18L,PARTS,3,"R$ 304,97","914,91"
+16,6,Pintura de teto e paredes,Mão de Obra,1,R$336,R$ 336.31
+17,7,Kit de produtos químicos profissionais,Peca,1,R$ 88.63,R$88
+18,7,Higienização de estofados e carpetes,Mão de Obra,1,"255,05","R$ 255,05"
+19,8,Higienização completa de ar condicionado,LABOR,1,"R$ 223,19",223.19
+20,9,Instalação de luminária plafon,Serviço,1,"R$ 92,37","R$ 92,37"
+21,9,Troca de fiação do chuveiro,Mão de Obra,1,166.98,166.98
+22,9,Instalação de tomada 20A,Material,1,25.09,25.09
+23,10,Higienização de estofados e carpetes,LABOR,1,R$286,R$286
+24,11,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,R$266,"266,84"
+25,11,Saco de cimento e argamassa,Peça,1,59.99,R$59
+26,12,Dobradiças com amortecedor,Material,1,"R$ 41,66",R$ 41.66
+27,13,Carga de gás refrigerante R410A,PARTS,1,"R$ 169,08","169,08"
+28,14,Substituição de reparo de descarga,Peça,3,"41,12",R$ 123.36
+29,14,Troca de sifão sanfonado,Peca,1,"32,73","R$ 32,73"
+30,14,Desentupimento de ralo ou pia,Serviço,1,R$ 162.35,R$ 162.35
+31,15,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,R$ 217.25,R$217
+32,15,Revestimento cerâmico metro quadrado,Peca,2,"R$ 77,56",155.12
+33,15,Saco de cimento e argamassa,Material,1,R$52,"R$ 52,85"
+34,15,Assentamento de piso cerâmico,Mao de Obra,1,"299,68",R$ 299.68
+35,16,Massa corrida e lixa,Material,1,70.82,R$70
+36,16,Pintura de teto e paredes,Serviço,1,R$381,R$381
+37,17,Carga de gás refrigerante R410A,Peca,2,"163,69","R$ 327,38"
+38,17,Suporte metálico condensadora,PARTS,3,R$94,R$284
+39,17,Higienização completa de ar condicionado,Serviço,1,R$225,R$225
+40,18,Lata de tinta acrílica fosca 18L,Material,1,307.82,R$307
+41,18,Pintura de teto e paredes,Mão de Obra,1,"360,74","360,74"
+42,18,Aplicação de verniz em esquadrias,Serviço,1,214.60,"214,60"
+43,19,Assentamento de piso cerâmico,Serviço,1,R$ 342.58,R$342
+44,19,Revestimento cerâmico metro quadrado,Peca,3,R$79,238.26
+45,20,Massa corrida e lixa,PARTS,1,R$68,R$68
+46,20,Lata de tinta acrílica fosca 18L,PARTS,3,"358,69",R$1076
+47,21,Limpeza pós-obra pesada,Serviço,1,R$ 413.48,R$413
+48,21,Limpeza de vidros e janelas em altura,Serviço,1,R$ 191.96,"191,96"
+49,21,Higienização de estofados e carpetes,Serviço,1,278.09,"278,09"
+50,22,Higienização de estofados e carpetes,Mão de Obra,1,"252,53",252.53
+51,22,Limpeza de vidros e janelas em altura,Mão de Obra,1,225.27,"R$ 225,27"
+52,22,Kit de produtos químicos profissionais,Peca,1,"R$ 104,90",104.90
+53,22,Limpeza pós-obra pesada,Mao de Obra,1,R$ 347.06,347.06
+54,23,Limpeza de vidros e janelas em altura,Serviço,1,217.94,R$217
+55,23,Higienização de estofados e carpetes,LABOR,1,"R$ 234,34","234,34"
+56,23,Kit de produtos químicos profissionais,Material,1,"R$ 105,33","105,33"
+57,24,Dobradiças com amortecedor,Peca,2,R$ 36.02,R$72
+58,24,Instalação de prateleiras suspensas,LABOR,1,R$130,"130,54"
+59,25,Assentamento de piso cerâmico,Mao de Obra,1,R$ 329.14,"R$ 329,14"
+60,26,Pequeno reparo em alvenaria e reboco,Serviço,1,"R$ 219,79","219,79"
+61,26,Assentamento de piso cerâmico,Mão de Obra,1,"R$ 285,12","285,12"
+62,26,Saco de cimento e argamassa,Material,2,"56,59","R$ 113,18"
+63,26,Revestimento cerâmico metro quadrado,Peca,3,"R$ 66,34","199,02"
+64,27,Higienização completa de ar condicionado,LABOR,1,237.99,R$237
+65,27,Instalação de split 12000 BTUs,Mão de Obra,1,R$516,"516,95"
+66,27,Suporte metálico condensadora,Peca,2,"78,68","157,36"
+67,27,Carga de gás refrigerante R410A,Material,2,R$ 189.12,378.24
+68,28,Dobradiças com amortecedor,Material,3,"R$ 42,78",R$ 128.34
+69,29,Kit de produtos químicos profissionais,Peca,2,R$ 92.97,"R$ 185,94"
+70,29,Higienização de estofados e carpetes,Mão de Obra,1,235.68,R$235
+71,29,Limpeza de vidros e janelas em altura,LABOR,1,"199,35","199,35"
+72,29,Limpeza pós-obra pesada,Mão de Obra,1,R$408,"408,88"
+73,30,Saco de cimento e argamassa,Peça,2,"61,21",R$122
+74,30,Assentamento de piso cerâmico,Mão de Obra,1,R$ 286.82,R$ 286.82
+75,30,Revestimento cerâmico metro quadrado,Peca,2,63.46,R$126
+76,31,Instalação de torneira monocomando,Mao de Obra,1,R$ 121.50,R$121
+77,31,Substituição de reparo de descarga,Peça,3,47.11,R$141
+78,32,Ajuste de portas e gavetas de armário,LABOR,1,R$169,R$ 169.00
+79,32,Kit de corrediças telescópicas,Peça,3,R$ 68.12,R$204
+80,33,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,"269,34",269.34
+81,34,Assentamento de piso cerâmico,Mao de Obra,1,293.95,R$ 293.95
+82,34,Pequeno reparo em alvenaria e reboco,LABOR,1,"261,64",R$ 261.64
+83,35,Revestimento cerâmico metro quadrado,Peça,3,R$ 75.62,226.86
+84,35,Pequeno reparo em alvenaria e reboco,Serviço,1,275.76,"275,76"
+85,36,Reparo de vazamento em tubulação,Mao de Obra,1,"251,93",251.93
+86,36,Substituição de reparo de descarga,PARTS,2,R$41,R$82
+87,36,Desentupimento de ralo ou pia,Mao de Obra,1,"R$ 170,76",170.76
+88,37,Kit de produtos químicos profissionais,Material,3,R$93,280.23
+89,37,Limpeza de vidros e janelas em altura,Mão de Obra,1,"187,45",R$187
+90,37,Higienização de estofados e carpetes,Serviço,1,R$254,"254,70"
+91,37,Limpeza pós-obra pesada,Serviço,1,R$398,"398,40"
+92,38,Manutenção em quadro de distribuição,Serviço,1,R$ 285.63,R$ 285.63
+93,39,Suporte metálico condensadora,Peca,3,80.91,R$242
+94,40,Limpeza pós-obra pesada,Serviço,1,"408,97",408.97
+95,40,Limpeza de vidros e janelas em altura,Mao de Obra,1,"197,44","R$ 197,44"
+96,40,Higienização de estofados e carpetes,Serviço,1,271.28,"271,28"
+97,41,Higienização de estofados e carpetes,Mão de Obra,1,R$ 274.02,"R$ 274,02"
+98,41,Kit de produtos químicos profissionais,Peça,3,R$ 107.00,"R$ 321,00"
+99,41,Limpeza de vidros e janelas em altura,Mao de Obra,1,185.01,"R$ 185,01"
+100,42,Kit de produtos químicos profissionais,PARTS,3,R$ 99.14,297.42
+101,43,Limpeza de vidros e janelas em altura,LABOR,1,"189,64",R$ 189.64
+102,43,Kit de produtos químicos profissionais,Peca,3,R$ 96.40,"R$ 289,20"
+103,43,Limpeza pós-obra pesada,Mao de Obra,1,R$411,R$ 411.98
+104,43,Higienização de estofados e carpetes,Serviço,1,245.41,R$245
+105,44,Higienização completa de ar condicionado,Mao de Obra,1,R$ 212.39,"R$ 212,39"
+106,44,Instalação de split 12000 BTUs,Serviço,1,"480,13",R$ 480.13
+107,44,Carga de gás refrigerante R410A,Peca,2,"R$ 192,87","385,74"
+108,45,Carga de gás refrigerante R410A,Peca,2,"R$ 185,77",R$371
+109,45,Higienização completa de ar condicionado,Mão de Obra,1,R$204,R$204
+110,46,Reparo de vazamento em tubulação,LABOR,1,R$253,253.55
+111,46,Desentupimento de ralo ou pia,Mao de Obra,1,"R$ 192,27",192.27
+112,47,Pintura de teto e paredes,Mão de Obra,1,350.78,"350,78"
+113,48,Dobradiças com amortecedor,Material,1,R$45,45.78
+114,48,Ajuste de portas e gavetas de armário,Mão de Obra,1,R$ 165.28,165.28
+115,48,Kit de corrediças telescópicas,Peça,2,"R$ 56,33","R$ 112,66"
+116,48,Instalação de prateleiras suspensas,Serviço,1,R$143,"R$ 143,31"
+117,49,Dobradiças com amortecedor,Peca,1,R$ 41.04,R$41
+118,49,Kit de corrediças telescópicas,Peca,2,R$ 62.66,"125,32"
+119,50,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,263.15,263.15
+120,50,Saco de cimento e argamassa,Peça,1,R$53,53.62
+121,50,Revestimento cerâmico metro quadrado,Peca,1,R$ 77.86,77.86
+122,50,Assentamento de piso cerâmico,Serviço,1,338.61,R$338
+123,51,Suporte metálico condensadora,PARTS,1,"R$ 82,20",R$ 82.20
+124,52,Revestimento cerâmico metro quadrado,Material,1,R$ 76.07,R$76
+125,52,Assentamento de piso cerâmico,Serviço,1,R$ 322.78,R$322
+126,53,Ajuste de portas e gavetas de armário,Mão de Obra,1,R$ 160.56,"R$ 160,56"
+127,53,Kit de corrediças telescópicas,Material,2,"62,30",R$ 124.60
+128,53,Dobradiças com amortecedor,Material,1,R$39,R$ 39.30
+129,53,Instalação de prateleiras suspensas,Mao de Obra,1,"133,23",133.23
+130,54,Kit de produtos químicos profissionais,Peça,1,"R$ 95,29",R$ 95.29
+131,55,Kit de corrediças telescópicas,Peca,1,R$61,"61,94"
+132,55,Instalação de prateleiras suspensas,Serviço,1,R$ 117.56,"R$ 117,56"
+133,55,Dobradiças com amortecedor,Peça,1,R$ 41.24,R$41
+134,55,Ajuste de portas e gavetas de armário,Mao de Obra,1,"165,06",165.06
+135,56,Instalação de split 12000 BTUs,Mão de Obra,1,"R$ 476,63",476.63
+136,56,Higienização completa de ar condicionado,Mao de Obra,1,R$244,"R$ 244,49"
+137,56,Suporte metálico condensadora,Peça,3,R$ 96.03,R$288
+138,56,Carga de gás refrigerante R410A,PARTS,2,"174,20",R$348
+139,57,Manutenção em quadro de distribuição,Serviço,1,R$291,"291,67"
+140,57,Instalação de tomada 20A,Peça,2,"R$ 27,22",R$54
+141,58,Instalação de split 12000 BTUs,Serviço,1,445.03,R$ 445.03
+142,58,Suporte metálico condensadora,Material,3,"R$ 88,95",R$266
+143,58,Carga de gás refrigerante R410A,PARTS,2,"R$ 197,91","395,82"
+144,59,Limpeza pós-obra pesada,Serviço,1,"R$ 382,94","R$ 382,94"
+145,60,Limpeza pós-obra pesada,Mão de Obra,1,"378,17","378,17"
+146,60,Higienização de estofados e carpetes,Mão de Obra,1,"R$ 251,45",R$ 251.45
+147,61,Aplicação de verniz em esquadrias,LABOR,1,177.44,"177,44"
+148,61,Lata de tinta acrílica fosca 18L,Peca,3,318.39,"955,17"
+149,62,Aplicação de verniz em esquadrias,Mao de Obra,1,186.48,"186,48"
+150,62,Pintura de teto e paredes,Mão de Obra,1,R$324,R$324
+151,62,Lata de tinta acrílica fosca 18L,PARTS,1,342.54,R$ 342.54
+152,63,Kit de corrediças telescópicas,Material,3,R$61,"R$ 184,80"
+153,63,Dobradiças com amortecedor,PARTS,2,"R$ 43,02",R$ 86.04
+154,63,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$ 170.30,R$170
+155,63,Instalação de prateleiras suspensas,Serviço,1,"118,44",118.44
+156,64,Pintura de teto e paredes,Mao de Obra,1,357.24,"R$ 357,24"
+157,64,Lata de tinta acrílica fosca 18L,Peça,1,"354,51","354,51"
+158,65,Higienização completa de ar condicionado,Mão de Obra,1,R$ 233.64,R$233
+159,66,Limpeza de vidros e janelas em altura,LABOR,1,R$ 201.48,R$ 201.48
+160,66,Higienização de estofados e carpetes,LABOR,1,R$252,"R$ 252,09"
+161,67,Instalação de split 12000 BTUs,Serviço,1,R$444,R$ 444.60
+162,67,Higienização completa de ar condicionado,Mao de Obra,1,R$242,R$242
+163,67,Carga de gás refrigerante R410A,Peca,1,"R$ 192,24",R$ 192.24
+164,67,Suporte metálico condensadora,Peca,2,R$ 78.99,R$157
+165,68,Troca de fiação do chuveiro,LABOR,1,"166,57","R$ 166,57"
+166,68,Instalação de tomada 20A,Material,2,R$23,R$46
+167,68,Troca de disjuntor bipolar,Material,3,66.54,199.62
+168,68,Instalação de luminária plafon,LABOR,1,R$92,"R$ 92,00"
+169,69,Saco de cimento e argamassa,Peca,2,R$60,"R$ 120,32"
+170,70,Substituição de reparo de descarga,Peca,1,R$42,42.86
+171,70,Desentupimento de ralo ou pia,Mão de Obra,1,R$ 169.47,R$ 169.47
+172,70,Reparo de vazamento em tubulação,Mao de Obra,1,R$275,"275,34"
+173,71,Revestimento cerâmico metro quadrado,Peça,1,75.45,75.45
+174,71,Saco de cimento e argamassa,Peca,1,57.44,57.44
+175,72,Troca de disjuntor bipolar,Material,2,"71,90","143,80"
+176,72,Instalação de luminária plafon,Mao de Obra,1,R$99,R$99
+177,72,Manutenção em quadro de distribuição,Serviço,1,"261,14","R$ 261,14"
+178,73,Higienização completa de ar condicionado,Mao de Obra,1,"R$ 234,00","234,00"
+179,73,Carga de gás refrigerante R410A,Peça,3,"R$ 202,67",608.01
+180,74,Substituição de reparo de descarga,PARTS,3,44.37,R$ 133.11
+181,75,Carga de gás refrigerante R410A,Material,3,"191,25",R$ 573.75
+182,76,Instalação de luminária plafon,LABOR,1,R$ 86.58,R$86
+183,76,Troca de fiação do chuveiro,Mao de Obra,1,"R$ 157,54","157,54"
+184,76,Troca de disjuntor bipolar,Peça,1,66.91,"66,91"
+185,77,Instalação de split 12000 BTUs,Mão de Obra,1,452.35,"R$ 452,35"
+186,77,Higienização completa de ar condicionado,LABOR,1,"R$ 198,92","198,92"
+187,78,Kit de corrediças telescópicas,Material,1,R$62,"R$ 62,05"
+188,78,Ajuste de portas e gavetas de armário,Serviço,1,R$ 156.41,"R$ 156,41"
+189,78,Instalação de prateleiras suspensas,Serviço,1,"R$ 124,95",124.95
+190,79,Ajuste de portas e gavetas de armário,Mao de Obra,1,"R$ 173,99","R$ 173,99"
+191,79,Kit de corrediças telescópicas,Peca,2,R$66,"R$ 132,22"
+192,80,Massa corrida e lixa,PARTS,3,R$ 80.14,R$240
+193,80,Aplicação de verniz em esquadrias,LABOR,1,R$ 171.12,"R$ 171,12"
+194,80,Lata de tinta acrílica fosca 18L,Peça,2,R$ 317.12,"R$ 634,24"
+195,81,Carga de gás refrigerante R410A,PARTS,1,172.04,"R$ 172,04"
+196,81,Higienização completa de ar condicionado,Mao de Obra,1,"246,23","246,23"
+197,81,Instalação de split 12000 BTUs,Serviço,1,"R$ 414,72","414,72"
+198,82,Massa corrida e lixa,Peca,2,"R$ 67,95","135,90"
+199,82,Lata de tinta acrílica fosca 18L,Material,1,"348,71","R$ 348,71"
+200,83,Limpeza de vidros e janelas em altura,Mão de Obra,1,209.04,"R$ 209,04"
+201,83,Higienização de estofados e carpetes,LABOR,1,272.47,R$ 272.47
+202,83,Kit de produtos químicos profissionais,Peca,1,92.43,"92,43"
+203,84,Limpeza de vidros e janelas em altura,Mão de Obra,1,228.23,"228,23"
+204,84,Kit de produtos químicos profissionais,PARTS,2,"R$ 91,79",R$ 183.58
+205,84,Limpeza pós-obra pesada,Mao de Obra,1,R$418,"R$ 418,72"
+206,85,Limpeza de vidros e janelas em altura,Mão de Obra,1,"R$ 203,10","R$ 203,10"
+207,85,Higienização de estofados e carpetes,Mão de Obra,1,R$ 238.01,R$ 238.01
+208,85,Kit de produtos químicos profissionais,PARTS,2,R$94,R$188
+209,85,Limpeza pós-obra pesada,LABOR,1,"R$ 366,59","R$ 366,59"
+210,86,Saco de cimento e argamassa,Peça,2,"52,45","104,90"
+211,86,Revestimento cerâmico metro quadrado,PARTS,2,R$78,R$156
+212,86,Assentamento de piso cerâmico,Mao de Obra,1,316.27,316.27
+213,86,Pequeno reparo em alvenaria e reboco,Serviço,1,"R$ 268,97","R$ 268,97"
+214,87,Limpeza de vidros e janelas em altura,Mao de Obra,1,197.20,"197,20"
+215,87,Higienização de estofados e carpetes,Mao de Obra,1,R$245,R$ 245.69
+216,87,Limpeza pós-obra pesada,Mao de Obra,1,"R$ 344,78",344.78
+217,88,Suporte metálico condensadora,Peca,3,R$83,"R$ 249,78"
+218,88,Carga de gás refrigerante R410A,Peça,3,R$193,R$ 580.59
+219,88,Higienização completa de ar condicionado,Serviço,1,R$244,"244,02"
+220,89,Higienização completa de ar condicionado,Mao de Obra,1,"R$ 207,76","R$ 207,76"
+221,89,Instalação de split 12000 BTUs,Mão de Obra,1,"R$ 421,62",R$421
+222,90,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$ 215.36,R$215
+223,90,Higienização de estofados e carpetes,Serviço,1,"286,94","286,94"
+224,90,Limpeza pós-obra pesada,LABOR,1,R$354,354.10
+225,90,Kit de produtos químicos profissionais,Peca,3,R$86,R$ 258.81
+226,91,Desentupimento de ralo ou pia,LABOR,1,"171,44","171,44"
+227,91,Substituição de reparo de descarga,PARTS,1,48.60,48.60
+228,91,Troca de sifão sanfonado,Peça,3,30.15,90.45
+229,92,Higienização de estofados e carpetes,LABOR,1,"R$ 250,97","250,97"
+230,93,Massa corrida e lixa,Material,1,R$85,R$85
+231,93,Lata de tinta acrílica fosca 18L,Peca,2,R$ 340.85,"R$ 681,70"
+232,93,Pintura de teto e paredes,Serviço,1,R$ 319.34,"R$ 319,34"
+233,93,Aplicação de verniz em esquadrias,Serviço,1,"R$ 188,14","188,14"
+234,94,Instalação de prateleiras suspensas,Mao de Obra,1,"R$ 146,08",R$146
+235,94,Dobradiças com amortecedor,Material,2,"37,85",R$ 75.70
+236,94,Ajuste de portas e gavetas de armário,Mao de Obra,1,161.83,161.83
+237,95,Kit de corrediças telescópicas,Material,3,R$60,R$ 180.84
+238,95,Dobradiças com amortecedor,Material,2,"R$ 38,99",R$77
+239,96,Carga de gás refrigerante R410A,Material,1,R$ 206.47,R$ 206.47
+240,96,Suporte metálico condensadora,PARTS,3,"R$ 81,98",245.94
+241,97,Suporte metálico condensadora,PARTS,3,"R$ 88,88",R$266
+242,97,Higienização completa de ar condicionado,Mao de Obra,1,R$240,"240,87"
+243,98,Dobradiças com amortecedor,PARTS,2,"44,97","89,94"
+244,98,Kit de corrediças telescópicas,Material,2,"R$ 58,21",R$ 116.42
+245,98,Instalação de prateleiras suspensas,Serviço,1,"121,37","121,37"
+246,99,Kit de produtos químicos profissionais,Peça,3,R$97,R$292
+247,99,Limpeza pós-obra pesada,Mão de Obra,1,R$ 344.75,"R$ 344,75"
+248,100,Substituição de reparo de descarga,Peça,2,47.18,R$94
+249,100,Reparo de vazamento em tubulação,Mao de Obra,1,R$ 259.46,"259,46"
+250,100,Desentupimento de ralo ou pia,LABOR,1,"195,70","R$ 195,70"
+251,100,Troca de sifão sanfonado,Peça,2,R$ 27.37,R$ 54.74
+252,101,Limpeza pós-obra pesada,Mao de Obra,1,"365,98",365.98
+253,102,Kit de produtos químicos profissionais,Peca,3,R$109,R$327
+254,103,Suporte metálico condensadora,Material,1,"93,62",R$ 93.62
+255,103,Carga de gás refrigerante R410A,Material,3,"163,15","489,45"
+256,103,Higienização completa de ar condicionado,Serviço,1,247.88,"R$ 247,88"
+257,104,Dobradiças com amortecedor,Peça,2,"36,98",R$73
+258,104,Ajuste de portas e gavetas de armário,Mão de Obra,1,"174,52","R$ 174,52"
+259,104,Kit de corrediças telescópicas,Peca,1,59.33,"59,33"
+260,105,Pequeno reparo em alvenaria e reboco,Serviço,1,"R$ 247,79",R$ 247.79
+261,106,Instalação de split 12000 BTUs,Mão de Obra,1,R$435,R$ 435.77
+262,107,Higienização completa de ar condicionado,Mão de Obra,1,"R$ 239,63","R$ 239,63"
+263,108,Higienização completa de ar condicionado,Mão de Obra,1,"221,85",221.85
+264,108,Suporte metálico condensadora,Peça,2,92.44,"R$ 184,88"
+265,108,Instalação de split 12000 BTUs,Mão de Obra,1,R$ 430.70,"R$ 430,70"
+266,109,Troca de disjuntor bipolar,PARTS,3,"R$ 72,09",216.27
+267,110,Limpeza de vidros e janelas em altura,LABOR,1,"205,58","R$ 205,58"
+268,110,Kit de produtos químicos profissionais,Peça,1,"97,32",R$97
+269,111,Saco de cimento e argamassa,PARTS,3,R$50,152.16
+270,112,Instalação de prateleiras suspensas,LABOR,1,"143,43","143,43"
+271,112,Kit de corrediças telescópicas,PARTS,3,"R$ 58,69","R$ 176,07"
+272,112,Ajuste de portas e gavetas de armário,Mão de Obra,1,R$ 144.39,"144,39"
+273,113,Limpeza de vidros e janelas em altura,LABOR,1,R$ 186.63,"R$ 186,63"
+274,113,Limpeza pós-obra pesada,Serviço,1,R$381,381.52
+275,113,Kit de produtos químicos profissionais,Peca,1,R$100,"R$ 100,02"
+276,113,Higienização de estofados e carpetes,Mão de Obra,1,290.07,290.07
+277,114,Ajuste de portas e gavetas de armário,LABOR,1,164.92,R$ 164.92
+278,114,Instalação de prateleiras suspensas,Serviço,1,R$ 132.66,R$132
+279,115,Kit de produtos químicos profissionais,Peca,2,"R$ 91,22",R$182
+280,115,Limpeza pós-obra pesada,Serviço,1,363.16,R$ 363.16
+281,116,Carga de gás refrigerante R410A,PARTS,2,"R$ 180,56",R$361
+282,117,Pintura de teto e paredes,Mão de Obra,1,"R$ 323,53","323,53"
+283,117,Aplicação de verniz em esquadrias,Mao de Obra,1,R$187,R$187
+284,117,Massa corrida e lixa,PARTS,2,R$ 80.66,161.32
+285,117,Lata de tinta acrílica fosca 18L,Material,1,"R$ 353,75","353,75"
+286,118,Instalação de split 12000 BTUs,LABOR,1,R$405,405.49
+287,118,Higienização completa de ar condicionado,Serviço,1,R$244,R$ 244.13
+288,118,Carga de gás refrigerante R410A,Peça,3,"R$ 188,03",564.09
+289,118,Suporte metálico condensadora,Peca,3,R$89,267.78
+290,119,Limpeza pós-obra pesada,Mao de Obra,1,"401,30",R$ 401.30
+291,119,Kit de produtos químicos profissionais,Peça,3,R$100,R$302
+292,120,Troca de disjuntor bipolar,PARTS,2,R$ 60.86,"121,72"
+293,121,Kit de corrediças telescópicas,Peca,1,"R$ 61,66",61.66
+294,121,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$159,"R$ 159,50"
+295,121,Instalação de prateleiras suspensas,Mao de Obra,1,R$ 117.42,R$117
+296,121,Dobradiças com amortecedor,Peca,2,R$44,R$88
+297,122,Kit de corrediças telescópicas,Peca,1,"R$ 56,41","56,41"
+298,122,Dobradiças com amortecedor,Peça,2,"R$ 43,10",R$ 86.20
+299,122,Ajuste de portas e gavetas de armário,LABOR,1,R$181,"181,15"
+300,122,Instalação de prateleiras suspensas,Mao de Obra,1,"R$ 132,94","132,94"
+301,123,Assentamento de piso cerâmico,Serviço,1,R$341,"R$ 341,27"
+302,123,Revestimento cerâmico metro quadrado,Material,1,R$ 74.71,R$74
+303,123,Saco de cimento e argamassa,PARTS,3,"52,85",158.55
+304,124,Limpeza pós-obra pesada,Mão de Obra,1,R$432,R$432
+305,124,Limpeza de vidros e janelas em altura,LABOR,1,R$ 180.37,R$ 180.37
+306,124,Kit de produtos químicos profissionais,PARTS,3,R$ 95.57,R$286
+307,125,Dobradiças com amortecedor,Material,2,40.08,80.16
+308,126,Instalação de torneira monocomando,Mao de Obra,1,R$131,"R$ 131,61"
+309,127,Dobradiças com amortecedor,Peça,1,"R$ 41,54","R$ 41,54"
+310,127,Instalação de prateleiras suspensas,Serviço,1,R$117,R$117
+311,127,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$ 181.88,"181,88"
+312,128,Pintura de teto e paredes,Mao de Obra,1,"R$ 373,77",R$ 373.77
+313,129,Instalação de prateleiras suspensas,Mao de Obra,1,"135,38",135.38
+314,129,Dobradiças com amortecedor,Peça,1,R$ 36.05,36.05
+315,129,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$ 155.07,"155,07"
+316,129,Kit de corrediças telescópicas,Peca,2,"60,94",121.88
+317,130,Manutenção em quadro de distribuição,Serviço,1,R$296,R$ 296.21
+318,131,Kit de produtos químicos profissionais,Peça,3,R$91,R$ 273.51
+319,131,Limpeza pós-obra pesada,Mão de Obra,1,R$384,R$384
+320,131,Higienização de estofados e carpetes,Mão de Obra,1,276.86,"276,86"
+321,131,Limpeza de vidros e janelas em altura,Serviço,1,R$ 182.02,"R$ 182,02"
+322,132,Kit de produtos químicos profissionais,Peça,3,91.75,275.25
+323,132,Higienização de estofados e carpetes,LABOR,1,R$257,"257,74"
+324,132,Limpeza pós-obra pesada,Mão de Obra,1,R$377,377.75
+325,133,Instalação de tomada 20A,PARTS,1,R$ 24.76,24.76
+326,133,Manutenção em quadro de distribuição,LABOR,1,308.78,308.78
+327,134,Saco de cimento e argamassa,Material,2,R$62,R$124
+328,134,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,"R$ 254,26",R$ 254.26
+329,135,Massa corrida e lixa,PARTS,2,R$ 78.69,157.38
+330,135,Pintura de teto e paredes,LABOR,1,"R$ 348,73",R$ 348.73
+331,135,Aplicação de verniz em esquadrias,Serviço,1,R$ 195.83,R$195
+332,136,Instalação de luminária plafon,Mao de Obra,1,"R$ 92,75",R$92
+333,137,Kit de produtos químicos profissionais,Material,3,"106,32",R$ 318.96
+334,137,Limpeza pós-obra pesada,LABOR,1,R$342,R$342
+335,138,Pintura de teto e paredes,Serviço,1,R$381,R$381
+336,138,Aplicação de verniz em esquadrias,Mao de Obra,1,R$193,R$193
+337,138,Massa corrida e lixa,Peca,2,R$72,"144,52"
+338,139,Limpeza de vidros e janelas em altura,LABOR,1,R$ 180.26,180.26
+339,139,Higienização de estofados e carpetes,Serviço,1,"R$ 294,18","R$ 294,18"
+340,140,Lata de tinta acrílica fosca 18L,Peça,1,R$350,R$ 350.72
+341,140,Aplicação de verniz em esquadrias,Mao de Obra,1,R$ 203.02,"R$ 203,02"
+342,140,Massa corrida e lixa,Peca,1,69.13,"69,13"
+343,140,Pintura de teto e paredes,Serviço,1,R$373,R$ 373.60
+344,141,Higienização de estofados e carpetes,LABOR,1,R$245,"R$ 245,38"
+345,142,Carga de gás refrigerante R410A,Peça,1,R$ 179.22,"179,22"
+346,142,Suporte metálico condensadora,PARTS,2,"96,80",R$ 193.60
+347,142,Instalação de split 12000 BTUs,Serviço,1,"437,32","R$ 437,32"
+348,142,Higienização completa de ar condicionado,Mão de Obra,1,228.50,"228,50"
+349,143,Troca de sifão sanfonado,PARTS,3,"R$ 29,67","R$ 89,01"
+350,143,Reparo de vazamento em tubulação,Serviço,1,R$267,"R$ 267,24"
+351,144,Aplicação de verniz em esquadrias,Mão de Obra,1,"R$ 189,90",R$189
+352,144,Lata de tinta acrílica fosca 18L,PARTS,2,R$326,"652,54"
+353,144,Massa corrida e lixa,Peça,2,83.63,"R$ 167,26"
+354,145,Ajuste de portas e gavetas de armário,Mao de Obra,1,"154,78",R$ 154.78
+355,145,Kit de corrediças telescópicas,Material,2,"60,36","120,72"
+356,146,Instalação de prateleiras suspensas,LABOR,1,R$ 132.37,132.37
+357,146,Kit de corrediças telescópicas,Peca,2,56.02,"112,04"
+358,146,Ajuste de portas e gavetas de armário,LABOR,1,154.04,"R$ 154,04"
+359,146,Dobradiças com amortecedor,Peça,3,"37,63",112.89
+360,147,Lata de tinta acrílica fosca 18L,Material,2,316.41,"R$ 632,82"
+361,147,Massa corrida e lixa,Material,2,R$ 79.01,R$ 158.02
+362,147,Aplicação de verniz em esquadrias,Mao de Obra,1,201.43,R$201
+363,147,Pintura de teto e paredes,LABOR,1,"R$ 365,02",R$ 365.02
+364,148,Instalação de prateleiras suspensas,Mão de Obra,1,"121,06","R$ 121,06"
+365,148,Kit de corrediças telescópicas,PARTS,1,"R$ 56,50","R$ 56,50"
+366,148,Ajuste de portas e gavetas de armário,Serviço,1,R$181,"R$ 181,47"
+367,148,Dobradiças com amortecedor,PARTS,1,"R$ 43,71","43,71"
+368,149,Carga de gás refrigerante R410A,Peca,3,178.06,534.18
+369,150,Pequeno reparo em alvenaria e reboco,Serviço,1,"264,28","264,28"
+370,150,Assentamento de piso cerâmico,Mão de Obra,1,"300,92","R$ 300,92"
+371,150,Saco de cimento e argamassa,Peça,1,"56,70","56,70"
+372,151,Limpeza de vidros e janelas em altura,Mão de Obra,1,R$ 201.86,201.86
+373,151,Higienização de estofados e carpetes,Mão de Obra,1,"287,85","R$ 287,85"
+374,152,Substituição de reparo de descarga,Material,2,R$ 43.56,"87,12"
+375,152,Desentupimento de ralo ou pia,LABOR,1,R$162,"R$ 162,87"
+376,152,Instalação de torneira monocomando,LABOR,1,"113,58","113,58"
+377,153,Kit de corrediças telescópicas,Material,1,"R$ 58,00",R$58
+378,153,Dobradiças com amortecedor,Peca,2,37.82,"R$ 75,64"
+379,153,Instalação de prateleiras suspensas,Mão de Obra,1,120.96,120.96
+380,153,Ajuste de portas e gavetas de armário,LABOR,1,R$ 153.89,153.89
+381,154,Instalação de prateleiras suspensas,LABOR,1,R$ 123.46,"R$ 123,46"
+382,154,Ajuste de portas e gavetas de armário,Serviço,1,"153,44","R$ 153,44"
+383,154,Dobradiças com amortecedor,PARTS,1,43.94,R$ 43.94
+384,155,Kit de produtos químicos profissionais,PARTS,2,R$ 100.81,201.62
+385,156,Instalação de prateleiras suspensas,Mão de Obra,1,R$123,"123,17"
+386,156,Ajuste de portas e gavetas de armário,Serviço,1,"156,95",R$156
+387,156,Dobradiças com amortecedor,Peça,3,37.60,"112,80"
+388,156,Kit de corrediças telescópicas,Material,2,"R$ 62,12",R$124
+389,157,Massa corrida e lixa,Material,3,"72,81","R$ 218,43"
+390,157,Pintura de teto e paredes,LABOR,1,"R$ 323,42",R$ 323.42
+391,157,Aplicação de verniz em esquadrias,LABOR,1,R$ 179.49,"R$ 179,49"
+392,157,Lata de tinta acrílica fosca 18L,PARTS,2,R$303,606.66
+393,158,Instalação de split 12000 BTUs,LABOR,1,"495,11",R$495
+394,159,Revestimento cerâmico metro quadrado,Peça,3,R$69,R$ 209.22
+395,160,Instalação de prateleiras suspensas,Mão de Obra,1,R$127,R$127
+396,160,Ajuste de portas e gavetas de armário,Mao de Obra,1,"161,72",R$161
+397,161,Instalação de split 12000 BTUs,LABOR,1,"405,02",R$405
+398,161,Suporte metálico condensadora,Peca,1,"R$ 87,50","87,50"
+399,161,Higienização completa de ar condicionado,Mão de Obra,1,"252,14","R$ 252,14"
+400,162,Higienização completa de ar condicionado,Serviço,1,R$203,R$ 203.05
+401,162,Suporte metálico condensadora,Peca,3,78.14,R$ 234.42
+402,163,Limpeza de vidros e janelas em altura,Serviço,1,"R$ 211,69","211,69"
+403,163,Kit de produtos químicos profissionais,Peça,3,"86,48",R$259
+404,163,Higienização de estofados e carpetes,Mão de Obra,1,"R$ 279,35",279.35
+405,163,Limpeza pós-obra pesada,LABOR,1,R$ 434.25,434.25
+406,164,Instalação de tomada 20A,Peça,2,R$24,R$49
+407,164,Manutenção em quadro de distribuição,Mão de Obra,1,R$ 321.80,"R$ 321,80"
+408,164,Instalação de luminária plafon,Serviço,1,"86,99",R$86
+409,164,Troca de disjuntor bipolar,Material,1,60.33,"60,33"
+410,165,Pintura de teto e paredes,LABOR,1,"R$ 381,30","R$ 381,30"
+411,165,Lata de tinta acrílica fosca 18L,Peça,1,"363,92","R$ 363,92"
+412,166,Carga de gás refrigerante R410A,PARTS,3,"202,77",R$ 608.31
+413,166,Suporte metálico condensadora,Peca,1,"R$ 82,54",82.54
+414,167,Pequeno reparo em alvenaria e reboco,LABOR,1,"246,51",246.51
+415,167,Saco de cimento e argamassa,Peça,3,R$ 56.81,R$170
+416,167,Revestimento cerâmico metro quadrado,PARTS,2,"R$ 72,81",R$ 145.62
+417,168,Reparo de vazamento em tubulação,Mao de Obra,1,275.74,"R$ 275,74"
+418,168,Instalação de torneira monocomando,Mao de Obra,1,R$ 136.32,R$ 136.32
+419,169,Instalação de prateleiras suspensas,Mão de Obra,1,R$123,R$123
+420,169,Ajuste de portas e gavetas de armário,Mão de Obra,1,R$ 171.36,"171,36"
+421,169,Kit de corrediças telescópicas,Peça,3,64.58,R$ 193.74
+422,170,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,R$ 242.58,R$ 242.58
+423,170,Revestimento cerâmico metro quadrado,PARTS,1,R$65,R$65
+424,170,Assentamento de piso cerâmico,Mão de Obra,1,R$290,R$ 290.01
+425,171,Aplicação de verniz em esquadrias,LABOR,1,180.18,"R$ 180,18"
+426,171,Massa corrida e lixa,Peça,2,R$ 85.32,R$ 170.64
+427,171,Lata de tinta acrílica fosca 18L,Material,1,R$302,302.17
+428,171,Pintura de teto e paredes,Serviço,1,R$ 375.19,375.19
+429,172,Aplicação de verniz em esquadrias,LABOR,1,R$217,217.73
+430,172,Lata de tinta acrílica fosca 18L,PARTS,3,R$ 349.21,"1.047,63"
+431,172,Pintura de teto e paredes,Mao de Obra,1,"353,46",353.46
+432,172,Massa corrida e lixa,PARTS,1,R$75,R$ 75.42
+433,173,Instalação de tomada 20A,Peça,2,26.19,"R$ 52,38"
+434,174,Instalação de split 12000 BTUs,Mão de Obra,1,R$ 468.62,R$ 468.62
+435,174,Carga de gás refrigerante R410A,PARTS,1,196.61,"196,61"
+436,174,Higienização completa de ar condicionado,Serviço,1,"215,02",R$ 215.02
+437,174,Suporte metálico condensadora,Peça,1,"R$ 95,59",R$95
+438,175,Limpeza de vidros e janelas em altura,LABOR,1,R$200,R$200
+439,175,Limpeza pós-obra pesada,Mao de Obra,1,R$342,R$342
+440,176,Saco de cimento e argamassa,Peça,2,"63,16",R$126
+441,176,Pequeno reparo em alvenaria e reboco,Mão de Obra,1,255.66,R$255
+442,176,Assentamento de piso cerâmico,LABOR,1,"R$ 297,01","297,01"
+443,177,Instalação de tomada 20A,PARTS,1,26.07,R$26
+444,177,Troca de disjuntor bipolar,Peca,3,"63,17",R$189
+445,178,Troca de sifão sanfonado,PARTS,1,R$ 30.49,R$30
+446,178,Substituição de reparo de descarga,Peca,2,"45,16",R$90
+447,178,Desentupimento de ralo ou pia,Mão de Obra,1,"R$ 198,27",R$ 198.27
+448,179,Revestimento cerâmico metro quadrado,Peca,1,68.78,68.78
+449,180,Manutenção em quadro de distribuição,Mão de Obra,1,R$289,"289,51"
+450,180,Troca de fiação do chuveiro,Mao de Obra,1,"R$ 164,98",R$ 164.98
+451,180,Instalação de luminária plafon,LABOR,1,"87,31",87.31
+452,181,Instalação de split 12000 BTUs,Mao de Obra,1,503.67,"503,67"
+453,182,Limpeza de vidros e janelas em altura,Mão de Obra,1,R$ 225.25,"225,25"
+454,183,Limpeza de vidros e janelas em altura,LABOR,1,R$195,"R$ 195,55"
+455,183,Higienização de estofados e carpetes,LABOR,1,"R$ 255,66",R$255
+456,183,Kit de produtos químicos profissionais,PARTS,3,R$103,"309,63"
+457,183,Limpeza pós-obra pesada,Mão de Obra,1,"402,69",R$ 402.69
+458,184,Higienização completa de ar condicionado,Mão de Obra,1,"215,52",R$215
+459,184,Instalação de split 12000 BTUs,LABOR,1,"432,54",R$432
+460,185,Instalação de tomada 20A,Peça,2,R$24,"R$ 49,16"
+461,185,Instalação de luminária plafon,Serviço,1,R$102,R$ 102.91
+462,185,Troca de fiação do chuveiro,Serviço,1,"R$ 138,48",138.48
+463,185,Manutenção em quadro de distribuição,Serviço,1,273.73,R$ 273.73
+464,186,Kit de corrediças telescópicas,Peça,2,"61,18","122,36"
+465,186,Instalação de prateleiras suspensas,Mão de Obra,1,R$136,"R$ 136,64"
+466,186,Dobradiças com amortecedor,PARTS,2,"44,18",R$88
+467,186,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$169,169.98
+468,187,Ajuste de portas e gavetas de armário,LABOR,1,R$170,170.50
+469,187,Instalação de prateleiras suspensas,Serviço,1,"120,72",R$120
+470,187,Kit de corrediças telescópicas,Peça,1,"66,33",66.33
+471,187,Dobradiças com amortecedor,Material,1,"41,98",41.98
+472,188,Manutenção em quadro de distribuição,Mao de Obra,1,"265,70",R$265
+473,188,Troca de fiação do chuveiro,Mao de Obra,1,164.79,"164,79"
+474,188,Instalação de tomada 20A,Material,1,R$ 26.14,"26,14"
+475,188,Instalação de luminária plafon,LABOR,1,"R$ 82,40",R$82
+476,189,Instalação de split 12000 BTUs,Mão de Obra,1,R$458,458.42
+477,189,Suporte metálico condensadora,Peça,2,"94,35",R$ 188.70
+478,189,Carga de gás refrigerante R410A,PARTS,1,R$ 162.52,162.52
+479,189,Higienização completa de ar condicionado,Mão de Obra,1,"R$ 234,19",R$ 234.19
+480,190,Massa corrida e lixa,Material,3,R$ 67.64,R$202
+481,190,Lata de tinta acrílica fosca 18L,Peca,2,"R$ 320,87","R$ 641,74"
+482,190,Aplicação de verniz em esquadrias,Mao de Obra,1,"R$ 197,99",R$197
+483,191,Aplicação de verniz em esquadrias,LABOR,1,R$206,R$206
+484,191,Pintura de teto e paredes,LABOR,1,"342,34",R$342
+485,192,Reparo de vazamento em tubulação,Mao de Obra,1,"R$ 271,84",271.84
+486,193,Troca de fiação do chuveiro,Mão de Obra,1,R$162,R$ 162.80
+487,193,Manutenção em quadro de distribuição,Mao de Obra,1,R$ 298.14,"298,14"
+488,193,Troca de disjuntor bipolar,Peça,3,R$62,"R$ 187,02"
+489,194,Higienização completa de ar condicionado,LABOR,1,"R$ 239,55",R$ 239.55
+490,195,Instalação de prateleiras suspensas,Mao de Obra,1,120.16,R$120
+491,195,Ajuste de portas e gavetas de armário,Mao de Obra,1,"180,72","180,72"
+492,195,Dobradiças com amortecedor,Peca,2,R$44,88.04
+493,195,Kit de corrediças telescópicas,Peça,2,R$65,R$ 131.20
+494,196,Ajuste de portas e gavetas de armário,LABOR,1,"R$ 144,95",R$144
+495,196,Kit de corrediças telescópicas,Peça,3,R$67,"R$ 202,23"
+496,196,Instalação de prateleiras suspensas,LABOR,1,"R$ 140,01",R$140
+497,197,Limpeza pós-obra pesada,Serviço,1,415.83,"415,83"
+498,197,Kit de produtos químicos profissionais,Peca,1,R$ 91.63,91.63
+499,197,Limpeza de vidros e janelas em altura,Mão de Obra,1,R$183,183.47
+500,198,Lata de tinta acrílica fosca 18L,Peca,1,333.71,"R$ 333,71"
+501,198,Aplicação de verniz em esquadrias,Mão de Obra,1,"R$ 213,58","R$ 213,58"
+502,198,Pintura de teto e paredes,Mao de Obra,1,R$ 373.15,"373,15"
+503,199,Higienização completa de ar condicionado,Mao de Obra,1,216.34,"R$ 216,34"
+504,200,Limpeza de vidros e janelas em altura,Serviço,1,R$ 204.33,R$ 204.33
+505,200,Kit de produtos químicos profissionais,Peça,1,90.09,90.09
+506,200,Limpeza pós-obra pesada,Mao de Obra,1,347.98,R$347
+507,201,Carga de gás refrigerante R410A,PARTS,3,168.37,R$505
+508,201,Instalação de split 12000 BTUs,Mão de Obra,1,"R$ 410,15",R$ 410.15
+509,202,Higienização de estofados e carpetes,Mão de Obra,1,"241,85",R$ 241.85
+510,202,Limpeza de vidros e janelas em altura,Mão de Obra,1,"218,21","R$ 218,21"
+511,202,Limpeza pós-obra pesada,Mão de Obra,1,353.47,R$ 353.47
+512,202,Kit de produtos químicos profissionais,Peça,3,94.29,R$ 282.87
+513,203,Instalação de prateleiras suspensas,Mão de Obra,1,R$ 139.50,"139,50"
+514,203,Ajuste de portas e gavetas de armário,Serviço,1,R$ 164.92,R$ 164.92
+515,203,Dobradiças com amortecedor,Peça,3,42.92,R$128
+516,204,Suporte metálico condensadora,PARTS,2,R$ 77.63,155.26
+517,204,Instalação de split 12000 BTUs,Mão de Obra,1,"R$ 460,97","R$ 460,97"
+518,204,Carga de gás refrigerante R410A,Peça,3,178.39,"535,17"
+519,205,Revestimento cerâmico metro quadrado,Peca,3,70.78,R$ 212.34
+520,206,Carga de gás refrigerante R410A,Material,3,R$ 183.80,R$ 551.40
+521,206,Suporte metálico condensadora,Material,3,"86,17",R$ 258.51
+522,207,Instalação de split 12000 BTUs,Mão de Obra,1,"456,59",R$ 456.59
+523,208,Instalação de split 12000 BTUs,Mão de Obra,1,R$ 487.82,"487,82"
+524,208,Suporte metálico condensadora,Peça,2,R$88,"R$ 177,62"
+525,208,Carga de gás refrigerante R410A,PARTS,2,206.11,R$412
+526,208,Higienização completa de ar condicionado,Serviço,1,199.85,"R$ 199,85"
+527,209,Desentupimento de ralo ou pia,Mão de Obra,1,192.11,R$192
+528,210,Higienização de estofados e carpetes,Mao de Obra,1,R$261,R$261
+529,210,Limpeza de vidros e janelas em altura,Mão de Obra,1,"R$ 208,76",R$208
+530,210,Kit de produtos químicos profissionais,PARTS,2,R$102,"205,94"
+531,210,Limpeza pós-obra pesada,LABOR,1,426.36,"426,36"
+532,211,Saco de cimento e argamassa,Peça,2,R$ 59.64,"119,28"
+533,211,Assentamento de piso cerâmico,Mao de Obra,1,R$296,296.45
+534,212,Massa corrida e lixa,Material,2,R$ 69.14,"138,28"
+535,213,Instalação de prateleiras suspensas,Serviço,1,132.40,"R$ 132,40"
+536,213,Ajuste de portas e gavetas de armário,LABOR,1,"R$ 155,66",R$ 155.66
+537,213,Kit de corrediças telescópicas,Material,3,R$63,"191,01"
+538,214,Troca de fiação do chuveiro,Serviço,1,R$ 148.24,R$148
+539,214,Troca de disjuntor bipolar,Peca,1,R$ 70.07,R$ 70.07
+540,214,Instalação de luminária plafon,Mão de Obra,1,R$ 99.88,R$ 99.88
+541,215,Massa corrida e lixa,Peca,3,"R$ 85,79","R$ 257,37"
+542,215,Aplicação de verniz em esquadrias,Serviço,1,R$ 190.22,190.22
+543,215,Pintura de teto e paredes,Mão de Obra,1,"R$ 396,18",R$396
+544,216,Troca de disjuntor bipolar,PARTS,1,"69,52","R$ 69,52"
+545,216,Instalação de luminária plafon,Mão de Obra,1,90.04,"90,04"
+546,216,Manutenção em quadro de distribuição,LABOR,1,R$258,R$ 258.47
+547,217,Limpeza de vidros e janelas em altura,LABOR,1,"210,16",210.16
+548,217,Limpeza pós-obra pesada,Serviço,1,"356,05",356.05
+549,218,Assentamento de piso cerâmico,LABOR,1,R$ 280.47,R$ 280.47
+550,218,Saco de cimento e argamassa,Peca,2,"R$ 56,03",R$112
+551,218,Revestimento cerâmico metro quadrado,Material,2,"64,55",129.10
+552,218,Pequeno reparo em alvenaria e reboco,Serviço,1,R$226,R$ 226.49
+553,219,Limpeza pós-obra pesada,Serviço,1,"R$ 366,95","366,95"
+554,220,Assentamento de piso cerâmico,LABOR,1,"297,99",R$ 297.99
+555,220,Pequeno reparo em alvenaria e reboco,Mão de Obra,1,"250,90",250.90
+556,220,Revestimento cerâmico metro quadrado,Peça,3,"R$ 65,37","196,11"
+557,220,Saco de cimento e argamassa,Peca,2,"R$ 55,27","110,54"
+558,221,Higienização completa de ar condicionado,LABOR,1,R$ 243.28,R$243
+559,221,Carga de gás refrigerante R410A,Material,2,178.79,"357,58"
+560,221,Suporte metálico condensadora,Peça,1,R$78,R$ 78.68
+561,222,Higienização de estofados e carpetes,Serviço,1,R$243,R$243
+562,222,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$ 218.18,"218,18"
+563,222,Limpeza pós-obra pesada,LABOR,1,R$ 344.73,R$ 344.73
+564,223,Desentupimento de ralo ou pia,LABOR,1,163.48,"R$ 163,48"
+565,223,Substituição de reparo de descarga,Peca,2,"R$ 40,99","R$ 81,98"
+566,223,Reparo de vazamento em tubulação,Mão de Obra,1,R$273,R$ 273.90
+567,223,Instalação de torneira monocomando,Mao de Obra,1,"R$ 113,54","R$ 113,54"
+568,224,Revestimento cerâmico metro quadrado,PARTS,1,"R$ 78,78",R$ 78.78
+569,224,Pequeno reparo em alvenaria e reboco,Serviço,1,"271,23",R$271
+570,225,Reparo de vazamento em tubulação,Mao de Obra,1,"233,49",R$233
+571,226,Limpeza de vidros e janelas em altura,Serviço,1,R$ 229.25,"R$ 229,25"
+572,226,Limpeza pós-obra pesada,Serviço,1,"427,00",R$ 427.00
+573,227,Lata de tinta acrílica fosca 18L,Material,1,"R$ 315,09",R$ 315.09
+574,227,Massa corrida e lixa,Peca,2,R$81,R$162
+575,228,Aplicação de verniz em esquadrias,Mão de Obra,1,"R$ 200,85","R$ 200,85"
+576,228,Massa corrida e lixa,PARTS,3,68.49,"R$ 205,47"
+577,228,Lata de tinta acrílica fosca 18L,Peca,1,R$ 318.61,"318,61"
+578,229,Substituição de reparo de descarga,PARTS,2,50.40,100.80
+579,230,Instalação de prateleiras suspensas,LABOR,1,R$132,132.84
+580,230,Kit de corrediças telescópicas,Material,3,62.31,R$186
+581,230,Dobradiças com amortecedor,Material,1,"41,07",41.07
+582,230,Ajuste de portas e gavetas de armário,Serviço,1,R$167,"167,64"
+583,231,Troca de fiação do chuveiro,Serviço,1,"149,27","149,27"
+584,232,Dobradiças com amortecedor,Material,1,R$40,R$40
+585,232,Kit de corrediças telescópicas,Material,2,R$58,"R$ 116,00"
+586,232,Instalação de prateleiras suspensas,Serviço,1,R$149,149.04
+587,233,Instalação de luminária plafon,Mão de Obra,1,"99,91","99,91"
+588,233,Troca de disjuntor bipolar,Material,1,R$ 63.33,R$63
+589,234,Higienização de estofados e carpetes,Serviço,1,"247,01",R$247
+590,234,Limpeza pós-obra pesada,Mão de Obra,1,"R$ 390,96",R$390
+591,234,Limpeza de vidros e janelas em altura,Serviço,1,R$ 223.14,223.14
+592,235,Desentupimento de ralo ou pia,Mao de Obra,1,"200,07",R$ 200.07
+593,235,Instalação de torneira monocomando,Mão de Obra,1,115.69,R$ 115.69
+594,235,Substituição de reparo de descarga,PARTS,1,R$ 42.19,"42,19"
+595,235,Reparo de vazamento em tubulação,Serviço,1,254.01,"R$ 254,01"
+596,236,Kit de corrediças telescópicas,Peca,1,"R$ 58,71",58.71
+597,237,Manutenção em quadro de distribuição,Mao de Obra,1,"306,12",R$306
+598,237,Troca de disjuntor bipolar,Peça,3,64.84,R$ 194.52
+599,238,Pequeno reparo em alvenaria e reboco,Mão de Obra,1,"273,80",273.80
+600,238,Revestimento cerâmico metro quadrado,Peca,3,"R$ 69,44",R$208
+601,238,Saco de cimento e argamassa,PARTS,1,R$ 61.07,"61,07"
+602,239,Kit de produtos químicos profissionais,Peça,1,105.91,"105,91"
+603,239,Limpeza de vidros e janelas em altura,Serviço,1,"R$ 223,97","223,97"
+604,239,Limpeza pós-obra pesada,Serviço,1,424.31,424.31
+605,240,Kit de corrediças telescópicas,Material,3,R$ 56.04,"168,12"
+606,240,Instalação de prateleiras suspensas,LABOR,1,"R$ 127,20",R$ 127.20
+607,240,Ajuste de portas e gavetas de armário,Mão de Obra,1,R$153,153.98
+608,240,Dobradiças com amortecedor,Peça,2,"40,51",R$ 81.02
+609,241,Lata de tinta acrílica fosca 18L,Peça,3,"R$ 339,77",1019.31
+610,241,Aplicação de verniz em esquadrias,Mão de Obra,1,"R$ 180,42",180.42
+611,242,Massa corrida e lixa,Peca,3,"71,31",213.93
+612,243,Dobradiças com amortecedor,Material,1,"R$ 39,70","R$ 39,70"
+613,243,Ajuste de portas e gavetas de armário,Mao de Obra,1,162.76,R$ 162.76
+614,243,Instalação de prateleiras suspensas,Serviço,1,R$140,"140,18"
+615,244,Troca de disjuntor bipolar,Material,2,"66,70",133.40
+616,245,Kit de corrediças telescópicas,Peça,3,"61,96","R$ 185,88"
+617,245,Dobradiças com amortecedor,Peça,2,36.44,"72,88"
+618,246,Limpeza de vidros e janelas em altura,LABOR,1,R$ 189.45,R$ 189.45
+619,246,Kit de produtos químicos profissionais,Peça,1,96.67,96.67
+620,247,Revestimento cerâmico metro quadrado,Peça,2,R$66,"132,32"
+621,248,Kit de produtos químicos profissionais,PARTS,2,"94,37",R$ 188.74
+622,248,Limpeza pós-obra pesada,Serviço,1,344.74,344.74
+623,248,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$211,"R$ 211,42"
+624,249,Substituição de reparo de descarga,Material,3,"44,79",R$ 134.37
+625,249,Reparo de vazamento em tubulação,Serviço,1,"R$ 240,01","R$ 240,01"
+626,249,Instalação de torneira monocomando,Mão de Obra,1,133.57,133.57
+627,250,Desentupimento de ralo ou pia,Serviço,1,"R$ 187,34",187.34
+628,250,Reparo de vazamento em tubulação,Mão de Obra,1,275.69,275.69
+629,250,Troca de sifão sanfonado,Peca,1,27.30,R$ 27.30
+630,250,Instalação de torneira monocomando,Mão de Obra,1,127.43,R$127
+631,251,Limpeza de vidros e janelas em altura,LABOR,1,"R$ 208,43",R$208
+632,251,Limpeza pós-obra pesada,Serviço,1,352.23,"R$ 352,23"
+633,252,Kit de produtos químicos profissionais,Material,2,99.45,R$198
+634,252,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$ 220.39,R$ 220.39
+635,252,Limpeza pós-obra pesada,Mao de Obra,1,"R$ 359,58",359.58
+636,252,Higienização de estofados e carpetes,LABOR,1,268.73,"R$ 268,73"
+637,253,Massa corrida e lixa,PARTS,1,R$ 69.60,"R$ 69,60"
+638,253,Lata de tinta acrílica fosca 18L,Peça,1,R$ 326.49,326.49
+639,254,Instalação de split 12000 BTUs,Mão de Obra,1,"470,84",R$470
+640,254,Suporte metálico condensadora,PARTS,2,"R$ 77,58",155.16
+641,254,Carga de gás refrigerante R410A,Peca,2,"R$ 200,19",400.38
+642,254,Higienização completa de ar condicionado,Serviço,1,R$ 219.98,"R$ 219,98"
+643,255,Manutenção em quadro de distribuição,Mao de Obra,1,R$ 253.46,253.46
+644,255,Troca de fiação do chuveiro,Mão de Obra,1,R$147,R$ 147.89
+645,255,Instalação de tomada 20A,Peca,3,R$28,84.54
+646,255,Instalação de luminária plafon,Mao de Obra,1,83.95,83.95
+647,256,Reparo de vazamento em tubulação,Serviço,1,231.31,"231,31"
+648,256,Desentupimento de ralo ou pia,LABOR,1,"R$ 172,56","172,56"
+649,257,Higienização completa de ar condicionado,Mao de Obra,1,R$ 240.36,R$240
+650,257,Suporte metálico condensadora,PARTS,3,90.73,272.19
+651,257,Instalação de split 12000 BTUs,LABOR,1,"R$ 513,30",R$513
+652,257,Carga de gás refrigerante R410A,PARTS,3,R$197,"R$ 591,60"
+653,258,Instalação de torneira monocomando,LABOR,1,R$ 132.57,132.57
+654,258,Reparo de vazamento em tubulação,LABOR,1,R$ 285.60,285.60
+655,259,Massa corrida e lixa,Material,2,R$84,"169,42"
+656,259,Aplicação de verniz em esquadrias,Serviço,1,R$ 215.83,"R$ 215,83"
+657,260,Higienização de estofados e carpetes,Mao de Obra,1,"261,25","261,25"
+658,261,Dobradiças com amortecedor,Peça,3,R$39,R$118
+659,261,Instalação de prateleiras suspensas,LABOR,1,R$126,R$126
+660,261,Kit de corrediças telescópicas,Peça,2,"R$ 61,82","R$ 123,64"
+661,261,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$ 179.61,"179,61"
+662,262,Instalação de prateleiras suspensas,Mão de Obra,1,R$128,R$128
+663,263,Higienização de estofados e carpetes,Mão de Obra,1,"267,57",267.57
+664,264,Higienização completa de ar condicionado,Serviço,1,252.81,R$ 252.81
+665,264,Instalação de split 12000 BTUs,Mão de Obra,1,421.24,421.24
+666,264,Suporte metálico condensadora,PARTS,1,R$ 97.07,97.07
+667,264,Carga de gás refrigerante R410A,Peça,2,R$163,"326,94"
+668,265,Pintura de teto e paredes,Mão de Obra,1,R$ 357.52,R$357
+669,265,Massa corrida e lixa,Peca,2,"68,41",R$ 136.82
+670,265,Aplicação de verniz em esquadrias,Serviço,1,"R$ 179,70","R$ 179,70"
+671,266,Limpeza pós-obra pesada,Mão de Obra,1,"405,39","R$ 405,39"
+672,266,Kit de produtos químicos profissionais,Material,3,101.28,R$ 303.84
+673,266,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$225,"R$ 225,01"
+674,266,Higienização de estofados e carpetes,Serviço,1,"296,28","R$ 296,28"
+675,267,Revestimento cerâmico metro quadrado,PARTS,2,"R$ 71,80",R$143
+676,268,Kit de produtos químicos profissionais,Peca,2,86.07,"172,14"
+677,268,Limpeza pós-obra pesada,LABOR,1,R$350,R$ 350.65
+678,268,Higienização de estofados e carpetes,Mão de Obra,1,"252,55","R$ 252,55"
+679,268,Limpeza de vidros e janelas em altura,Serviço,1,R$ 187.71,"R$ 187,71"
+680,269,Kit de produtos químicos profissionais,Peça,1,91.19,R$91
+681,270,Higienização completa de ar condicionado,LABOR,1,R$ 228.47,R$228
+682,271,Pequeno reparo em alvenaria e reboco,LABOR,1,243.10,R$243
+683,271,Assentamento de piso cerâmico,Mão de Obra,1,"R$ 291,69","R$ 291,69"
+684,272,Higienização de estofados e carpetes,LABOR,1,R$ 239.83,R$239
+685,273,Assentamento de piso cerâmico,LABOR,1,"R$ 315,66",R$ 315.66
+686,273,Saco de cimento e argamassa,Material,2,57.14,R$114
+687,273,Pequeno reparo em alvenaria e reboco,LABOR,1,R$220,"R$ 220,87"
+688,273,Revestimento cerâmico metro quadrado,PARTS,3,"70,79",212.37
+689,274,Higienização completa de ar condicionado,Mao de Obra,1,R$ 242.90,R$ 242.90
+690,274,Carga de gás refrigerante R410A,PARTS,2,"205,53",411.06
+691,274,Instalação de split 12000 BTUs,Mão de Obra,1,"R$ 506,76",R$ 506.76
+692,275,Revestimento cerâmico metro quadrado,Peça,2,R$79,"158,68"
+693,276,Instalação de split 12000 BTUs,LABOR,1,R$ 460.75,"R$ 460,75"
+694,276,Suporte metálico condensadora,Material,2,"96,02","R$ 192,04"
+695,276,Carga de gás refrigerante R410A,PARTS,2,R$170,"R$ 341,52"
+696,276,Higienização completa de ar condicionado,Mão de Obra,1,252.46,"R$ 252,46"
+697,277,Limpeza pós-obra pesada,Mao de Obra,1,"R$ 364,64","364,64"
+698,277,Kit de produtos químicos profissionais,PARTS,3,R$104,R$313
+699,277,Limpeza de vidros e janelas em altura,LABOR,1,201.93,R$201
+700,278,Higienização de estofados e carpetes,Serviço,1,"R$ 273,70","R$ 273,70"
+701,279,Limpeza de vidros e janelas em altura,Serviço,1,R$199,R$199
+702,280,Reparo de vazamento em tubulação,Serviço,1,R$247,247.21
+703,280,Instalação de torneira monocomando,Mão de Obra,1,"R$ 113,58","R$ 113,58"
+704,281,Troca de fiação do chuveiro,Mão de Obra,1,"R$ 156,99",R$ 156.99
+705,281,Troca de disjuntor bipolar,PARTS,3,71.81,"215,43"
+706,281,Manutenção em quadro de distribuição,Mão de Obra,1,R$ 265.68,"R$ 265,68"
+707,282,Kit de produtos químicos profissionais,Material,1,R$101,R$ 101.96
+708,282,Higienização de estofados e carpetes,Mao de Obra,1,249.54,R$ 249.54
+709,283,Kit de corrediças telescópicas,Peça,1,R$ 56.97,"56,97"
+710,284,Instalação de prateleiras suspensas,LABOR,1,"142,59",R$ 142.59
+711,284,Ajuste de portas e gavetas de armário,Mão de Obra,1,"156,20","156,20"
+712,285,Limpeza de vidros e janelas em altura,Mão de Obra,1,R$226,"226,05"
+713,285,Higienização de estofados e carpetes,Mao de Obra,1,R$ 285.32,"R$ 285,32"
+714,285,Kit de produtos químicos profissionais,Peça,3,R$104,R$313
+715,286,Aplicação de verniz em esquadrias,Serviço,1,R$193,"R$ 193,50"
+716,286,Pintura de teto e paredes,Mão de Obra,1,333.13,R$ 333.13
+717,286,Massa corrida e lixa,Material,2,71.60,R$143
+718,287,Higienização de estofados e carpetes,Mao de Obra,1,262.11,"262,11"
+719,287,Limpeza pós-obra pesada,LABOR,1,R$ 367.94,367.94
+720,287,Limpeza de vidros e janelas em altura,LABOR,1,"191,69","R$ 191,69"
+721,287,Kit de produtos químicos profissionais,PARTS,2,"105,51",R$ 211.02
+722,288,Substituição de reparo de descarga,Material,2,49.31,R$98
+723,288,Instalação de torneira monocomando,LABOR,1,130.73,R$130
+724,288,Troca de sifão sanfonado,Peça,1,R$ 33.49,R$ 33.49
+725,289,Limpeza pós-obra pesada,Mão de Obra,1,"377,60","R$ 377,60"
+726,289,Limpeza de vidros e janelas em altura,Mao de Obra,1,"204,99",R$ 204.99
+727,289,Higienização de estofados e carpetes,Serviço,1,R$261,"261,24"
+728,289,Kit de produtos químicos profissionais,PARTS,2,R$ 99.44,R$ 198.88
+729,290,Higienização de estofados e carpetes,Mão de Obra,1,"R$ 277,87",R$277
+730,290,Kit de produtos químicos profissionais,Peça,2,"R$ 86,14",172.28
+731,290,Limpeza de vidros e janelas em altura,Mão de Obra,1,"194,19",R$194
+732,290,Limpeza pós-obra pesada,LABOR,1,"348,65",R$348
+733,291,Limpeza pós-obra pesada,Serviço,1,R$ 383.06,R$383
+734,291,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$208,R$ 208.75
+735,292,Instalação de split 12000 BTUs,Serviço,1,"437,39","437,39"
+736,292,Suporte metálico condensadora,Peça,2,89.53,R$ 179.06
+737,292,Carga de gás refrigerante R410A,Material,1,202.50,202.50
+738,292,Higienização completa de ar condicionado,Mão de Obra,1,R$248,"R$ 248,10"
+739,293,Assentamento de piso cerâmico,LABOR,1,R$275,"275,74"
+740,294,Kit de corrediças telescópicas,Peça,2,"55,72",111.44
+741,295,Troca de fiação do chuveiro,Serviço,1,R$ 155.05,"R$ 155,05"
+742,295,Troca de disjuntor bipolar,Peca,3,R$ 70.91,212.73
+743,296,Saco de cimento e argamassa,Peça,2,"60,05",R$ 120.10
+744,296,Assentamento de piso cerâmico,LABOR,1,285.00,"R$ 285,00"
+745,296,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,R$ 275.36,"R$ 275,36"
+746,296,Revestimento cerâmico metro quadrado,PARTS,1,R$ 79.78,R$ 79.78
+747,297,Dobradiças com amortecedor,PARTS,2,39.23,"78,46"
+748,297,Kit de corrediças telescópicas,Material,1,R$ 59.84,"R$ 59,84"
+749,298,Troca de disjuntor bipolar,Peça,3,"64,81",R$ 194.43
+750,298,Troca de fiação do chuveiro,Mao de Obra,1,158.83,"R$ 158,83"
+751,298,Instalação de luminária plafon,Serviço,1,88.54,R$88
+752,299,Massa corrida e lixa,Peça,2,R$ 76.85,153.70
+753,300,Revestimento cerâmico metro quadrado,Peça,3,R$ 68.80,R$206
+754,301,Suporte metálico condensadora,Peça,1,R$79,R$79
+755,302,Suporte metálico condensadora,Peça,2,"88,75",177.50
+756,302,Instalação de split 12000 BTUs,Mao de Obra,1,414.00,414.00
+757,303,Limpeza pós-obra pesada,Serviço,1,"366,44",366.44
+758,303,Higienização de estofados e carpetes,Serviço,1,"R$ 252,41","252,41"
+759,303,Kit de produtos químicos profissionais,Peça,1,R$ 102.48,R$ 102.48
+760,304,Limpeza de vidros e janelas em altura,LABOR,1,224.25,R$224
+761,304,Limpeza pós-obra pesada,Serviço,1,"357,42","357,42"
+762,304,Kit de produtos químicos profissionais,Peca,3,"R$ 102,34",307.02
+763,304,Higienização de estofados e carpetes,Mão de Obra,1,R$ 294.22,294.22
+764,305,Aplicação de verniz em esquadrias,LABOR,1,R$189,R$ 189.89
+765,306,Assentamento de piso cerâmico,Mao de Obra,1,R$ 331.07,331.07
+766,307,Limpeza pós-obra pesada,Mão de Obra,1,R$ 359.71,359.71
+767,307,Limpeza de vidros e janelas em altura,LABOR,1,189.10,R$189
+768,308,Instalação de torneira monocomando,LABOR,1,"110,57","R$ 110,57"
+769,309,Limpeza pós-obra pesada,LABOR,1,391.62,R$391
+770,310,Instalação de split 12000 BTUs,Mao de Obra,1,"R$ 514,72","R$ 514,72"
+771,310,Suporte metálico condensadora,Material,2,R$ 95.00,"R$ 190,00"
+772,310,Carga de gás refrigerante R410A,Peca,3,R$ 167.53,"502,59"
+773,311,Dobradiças com amortecedor,PARTS,3,"42,13",126.39
+774,311,Ajuste de portas e gavetas de armário,Serviço,1,"R$ 181,56",181.56
+775,311,Instalação de prateleiras suspensas,Mão de Obra,1,R$ 126.55,R$126
+776,311,Kit de corrediças telescópicas,PARTS,3,R$ 65.77,197.31
+777,312,Instalação de split 12000 BTUs,LABOR,1,R$ 516.75,"516,75"
+778,313,Carga de gás refrigerante R410A,PARTS,3,"196,49",589.47
+779,313,Higienização completa de ar condicionado,Serviço,1,R$248,248.06
+780,313,Suporte metálico condensadora,PARTS,1,"81,25","R$ 81,25"
+781,313,Instalação de split 12000 BTUs,Mao de Obra,1,R$417,R$ 417.53
+782,314,Higienização de estofados e carpetes,Mão de Obra,1,"R$ 267,78",267.78
+783,314,Limpeza de vidros e janelas em altura,Serviço,1,"180,46",R$ 180.46
+784,314,Kit de produtos químicos profissionais,Material,2,105.38,R$ 210.76
+785,315,Dobradiças com amortecedor,Peca,1,R$ 45.81,R$ 45.81
+786,315,Instalação de prateleiras suspensas,Mão de Obra,1,"R$ 144,56",R$ 144.56
+787,315,Ajuste de portas e gavetas de armário,Serviço,1,"178,27",R$ 178.27
+788,315,Kit de corrediças telescópicas,Peca,1,62.22,62.22
+789,316,Troca de sifão sanfonado,PARTS,2,"32,64",65.28
+790,317,Manutenção em quadro de distribuição,Mão de Obra,1,306.98,306.98
+791,317,Troca de disjuntor bipolar,PARTS,3,"R$ 72,18","216,54"
+792,317,Troca de fiação do chuveiro,Mão de Obra,1,"R$ 171,53","R$ 171,53"
+793,318,Reparo de vazamento em tubulação,LABOR,1,271.58,271.58
+794,318,Troca de sifão sanfonado,Material,2,"31,74","R$ 63,48"
+795,318,Instalação de torneira monocomando,LABOR,1,"R$ 111,60",111.60
+796,319,Dobradiças com amortecedor,Peça,1,43.14,"R$ 43,14"
+797,319,Kit de corrediças telescópicas,Material,2,"R$ 62,34",R$124
+798,319,Instalação de prateleiras suspensas,LABOR,1,R$ 144.21,"R$ 144,21"
+799,320,Carga de gás refrigerante R410A,Peca,1,R$184,R$ 184.78
+800,321,Manutenção em quadro de distribuição,LABOR,1,R$ 258.93,"R$ 258,93"
+801,321,Instalação de tomada 20A,Peça,1,R$ 23.39,R$23
+802,321,Troca de fiação do chuveiro,Mao de Obra,1,"155,70",R$ 155.70
+803,322,Dobradiças com amortecedor,Peça,3,"43,33",R$129
+804,322,Kit de corrediças telescópicas,Peça,3,63.72,R$ 191.16
+805,323,Assentamento de piso cerâmico,Mao de Obra,1,R$ 338.19,R$ 338.19
+806,324,Higienização de estofados e carpetes,Mao de Obra,1,R$279,"279,53"
+807,325,Lata de tinta acrílica fosca 18L,Material,3,R$298,"894,33"
+808,325,Pintura de teto e paredes,Mao de Obra,1,R$ 319.63,R$319
+809,325,Aplicação de verniz em esquadrias,Serviço,1,R$ 190.87,190.87
+810,326,Lata de tinta acrílica fosca 18L,PARTS,1,R$ 346.40,R$346
+811,326,Pintura de teto e paredes,Mao de Obra,1,R$320,320.02
+812,326,Aplicação de verniz em esquadrias,LABOR,1,209.40,R$209
+813,327,Instalação de prateleiras suspensas,Mao de Obra,1,R$ 139.83,R$139
+814,328,Limpeza de vidros e janelas em altura,Mão de Obra,1,"204,78","R$ 204,78"
+815,329,Instalação de luminária plafon,Serviço,1,"R$ 101,08","101,08"
+816,330,Dobradiças com amortecedor,PARTS,1,R$ 45.13,"45,13"
+817,330,Kit de corrediças telescópicas,Peca,1,"61,06","61,06"
+818,330,Ajuste de portas e gavetas de armário,Mão de Obra,1,R$161,"161,13"
+819,330,Instalação de prateleiras suspensas,Serviço,1,120.53,R$ 120.53
+820,331,Troca de sifão sanfonado,Material,3,"28,49","R$ 85,47"
+821,332,Kit de produtos químicos profissionais,Peca,1,R$88,"R$ 88,50"
+822,332,Limpeza de vidros e janelas em altura,Mão de Obra,1,"R$ 218,37","218,37"
+823,333,Limpeza pós-obra pesada,Mao de Obra,1,R$ 414.84,414.84
+824,333,Limpeza de vidros e janelas em altura,LABOR,1,R$189,R$189
+825,334,Kit de produtos químicos profissionais,Peca,1,R$ 94.53,R$ 94.53
+826,334,Higienização de estofados e carpetes,Serviço,1,"R$ 255,85",R$255
+827,334,Limpeza de vidros e janelas em altura,LABOR,1,"201,35","R$ 201,35"
+828,334,Limpeza pós-obra pesada,Mao de Obra,1,"367,58",367.58
+829,335,Revestimento cerâmico metro quadrado,PARTS,2,"R$ 68,33",R$136
+830,335,Pequeno reparo em alvenaria e reboco,Mão de Obra,1,"262,23","262,23"
+831,335,Assentamento de piso cerâmico,Mao de Obra,1,R$325,R$325
+832,335,Saco de cimento e argamassa,Peca,3,R$ 54.61,R$163
+833,336,Higienização de estofados e carpetes,Mão de Obra,1,R$298,R$ 298.33
+834,336,Limpeza de vidros e janelas em altura,Mão de Obra,1,182.19,R$182
+835,336,Limpeza pós-obra pesada,Mao de Obra,1,"409,60",409.60
+836,337,Lata de tinta acrílica fosca 18L,Material,3,303.22,R$909
+837,337,Pintura de teto e paredes,LABOR,1,R$ 391.15,391.15
+838,337,Aplicação de verniz em esquadrias,Serviço,1,R$206,206.66
+839,338,Instalação de tomada 20A,Peça,2,R$ 25.95,"R$ 51,90"
+840,338,Troca de fiação do chuveiro,Mao de Obra,1,"R$ 155,01",R$ 155.01
+841,338,Instalação de luminária plafon,Mao de Obra,1,R$ 102.20,"102,20"
+842,339,Ajuste de portas e gavetas de armário,Serviço,1,R$172,"172,88"
+843,340,Instalação de torneira monocomando,Mão de Obra,1,R$117,117.73
+844,340,Troca de sifão sanfonado,Material,1,"30,35",R$ 30.35
+845,340,Desentupimento de ralo ou pia,LABOR,1,202.60,R$ 202.60
+846,340,Substituição de reparo de descarga,Peça,2,R$ 42.58,R$85
+847,341,Instalação de luminária plafon,Serviço,1,"R$ 86,52",R$86
+848,342,Dobradiças com amortecedor,PARTS,2,"R$ 37,43","R$ 74,86"
+849,342,Kit de corrediças telescópicas,Peca,3,"R$ 65,04",R$ 195.12
+850,343,Carga de gás refrigerante R410A,PARTS,1,R$186,186.51
+851,344,Limpeza pós-obra pesada,Mao de Obra,1,"432,86","R$ 432,86"
+852,344,Kit de produtos químicos profissionais,Peca,3,"R$ 93,43","R$ 280,29"
+853,344,Higienização de estofados e carpetes,Mão de Obra,1,273.29,R$273
+854,344,Limpeza de vidros e janelas em altura,Mão de Obra,1,196.74,R$ 196.74
+855,345,Saco de cimento e argamassa,Peça,1,"60,19",R$ 60.19
+856,346,Higienização completa de ar condicionado,Serviço,1,R$224,"224,47"
+857,346,Suporte metálico condensadora,Peça,1,93.55,93.55
+858,346,Instalação de split 12000 BTUs,Serviço,1,R$466,R$466
+859,347,Kit de produtos químicos profissionais,Peça,2,"94,07",188.14
+860,347,Limpeza de vidros e janelas em altura,Serviço,1,R$ 187.21,R$ 187.21
+861,348,Reparo de vazamento em tubulação,LABOR,1,R$ 247.83,"R$ 247,83"
+862,348,Troca de sifão sanfonado,Material,1,R$ 31.27,R$ 31.27
+863,348,Substituição de reparo de descarga,Peca,2,48.87,97.74
+864,348,Instalação de torneira monocomando,Serviço,1,"R$ 129,68","129,68"
+865,349,Limpeza de vidros e janelas em altura,LABOR,1,R$193,193.59
+866,349,Kit de produtos químicos profissionais,Material,1,R$103,"R$ 103,15"
+867,350,Higienização completa de ar condicionado,Mão de Obra,1,"233,57","R$ 233,57"
+868,351,Limpeza pós-obra pesada,LABOR,1,R$ 402.65,"402,65"
+869,351,Higienização de estofados e carpetes,LABOR,1,R$239,239.53
+870,351,Kit de produtos químicos profissionais,PARTS,1,"86,64","R$ 86,64"
+871,352,Kit de produtos químicos profissionais,Material,3,R$104,"R$ 313,23"
+872,352,Higienização de estofados e carpetes,Mão de Obra,1,252.86,"R$ 252,86"
+873,352,Limpeza de vidros e janelas em altura,LABOR,1,R$ 224.26,R$ 224.26
+874,352,Limpeza pós-obra pesada,Mão de Obra,1,R$ 418.71,R$418
+875,353,Suporte metálico condensadora,Peça,3,R$78,234.27
+876,353,Higienização completa de ar condicionado,LABOR,1,R$ 203.36,"203,36"
+877,354,Dobradiças com amortecedor,Peca,3,43.72,"131,16"
+878,355,Pintura de teto e paredes,Mao de Obra,1,"R$ 359,27",R$359
+879,355,Lata de tinta acrílica fosca 18L,Peça,3,R$292,"R$ 877,68"
+880,355,Massa corrida e lixa,Peca,1,83.49,R$ 83.49
+881,356,Kit de produtos químicos profissionais,Peca,2,"R$ 90,24","180,48"
+882,356,Limpeza pós-obra pesada,Serviço,1,R$ 374.53,374.53
+883,357,Instalação de prateleiras suspensas,Serviço,1,"145,21","145,21"
+884,357,Kit de corrediças telescópicas,Peça,3,"R$ 56,64","169,92"
+885,357,Ajuste de portas e gavetas de armário,Mao de Obra,1,160.20,160.20
+886,357,Dobradiças com amortecedor,Peca,3,R$ 38.14,"R$ 114,42"
+887,358,Aplicação de verniz em esquadrias,Mão de Obra,1,"174,70","174,70"
+888,358,Lata de tinta acrílica fosca 18L,Material,1,R$ 300.04,300.04
+889,358,Pintura de teto e paredes,LABOR,1,390.63,"390,63"
+890,359,Instalação de tomada 20A,PARTS,3,"26,11","78,33"
+891,359,Troca de fiação do chuveiro,Mao de Obra,1,R$135,"R$ 135,61"
+892,359,Troca de disjuntor bipolar,Material,3,66.61,199.83
+893,359,Instalação de luminária plafon,Serviço,1,R$88,"88,91"
+894,360,Saco de cimento e argamassa,Material,1,"R$ 58,43",58.43
+895,360,Pequeno reparo em alvenaria e reboco,LABOR,1,261.00,R$261
+896,360,Assentamento de piso cerâmico,LABOR,1,"313,59",313.59
+897,361,Assentamento de piso cerâmico,Mao de Obra,1,"328,66","328,66"
+898,362,Ajuste de portas e gavetas de armário,Serviço,1,R$ 153.67,R$153
+899,362,Kit de corrediças telescópicas,PARTS,3,R$59,179.70
+900,362,Dobradiças com amortecedor,Material,1,R$ 45.39,45.39
+901,363,Higienização completa de ar condicionado,LABOR,1,203.13,"R$ 203,13"
+902,363,Carga de gás refrigerante R410A,Peça,3,"R$ 196,65",R$589
+903,364,Instalação de torneira monocomando,Mão de Obra,1,124.06,"124,06"
+904,364,Troca de sifão sanfonado,PARTS,3,R$ 27.39,"R$ 82,17"
+905,365,Higienização completa de ar condicionado,LABOR,1,225.01,"R$ 225,01"
+906,365,Carga de gás refrigerante R410A,PARTS,2,R$ 205.16,410.32
+907,365,Suporte metálico condensadora,Material,2,R$ 95.41,R$ 190.82
+908,365,Instalação de split 12000 BTUs,Mão de Obra,1,R$438,R$438
+909,366,Lata de tinta acrílica fosca 18L,Peça,3,R$ 328.94,"986,82"
+910,367,Higienização de estofados e carpetes,Serviço,1,R$ 262.34,"262,34"
+911,367,Limpeza pós-obra pesada,Mao de Obra,1,358.43,"R$ 358,43"
+912,367,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$ 209.18,R$ 209.18
+913,368,Instalação de torneira monocomando,LABOR,1,R$113,"113,02"
+914,368,Substituição de reparo de descarga,Peca,3,45.11,"R$ 135,33"
+915,368,Troca de sifão sanfonado,Peca,1,28.35,R$ 28.35
+916,369,Limpeza de vidros e janelas em altura,Mão de Obra,1,R$219,"R$ 219,76"
+917,369,Higienização de estofados e carpetes,Mão de Obra,1,R$259,R$ 259.06
+918,370,Limpeza de vidros e janelas em altura,Mao de Obra,1,204.93,"R$ 204,93"
+919,371,Instalação de luminária plafon,LABOR,1,"101,16","R$ 101,16"
+920,371,Troca de disjuntor bipolar,Material,1,"66,14","66,14"
+921,372,Lata de tinta acrílica fosca 18L,Peça,1,"R$ 354,04","354,04"
+922,372,Aplicação de verniz em esquadrias,Serviço,1,R$ 211.92,R$ 211.92
+923,372,Pintura de teto e paredes,Mao de Obra,1,R$322,"R$ 322,70"
+924,373,Limpeza de vidros e janelas em altura,Mão de Obra,1,R$186,186.31
+925,373,Kit de produtos químicos profissionais,PARTS,3,R$96,R$288
+926,374,Reparo de vazamento em tubulação,Mão de Obra,1,"R$ 265,45","R$ 265,45"
+927,374,Troca de sifão sanfonado,PARTS,2,R$ 27.45,54.90
+928,374,Instalação de torneira monocomando,Mão de Obra,1,132.56,"R$ 132,56"
+929,375,Suporte metálico condensadora,Peça,2,97.22,R$ 194.44
+930,375,Instalação de split 12000 BTUs,Serviço,1,R$ 412.72,"412,72"
+931,376,Instalação de luminária plafon,Serviço,1,"95,89","95,89"
+932,377,Higienização de estofados e carpetes,Serviço,1,R$ 276.16,"276,16"
+933,377,Kit de produtos químicos profissionais,Peca,1,R$95,R$95
+934,377,Limpeza de vidros e janelas em altura,Serviço,1,"R$ 204,68","R$ 204,68"
+935,378,Instalação de luminária plafon,Mao de Obra,1,97.51,R$ 97.51
+936,378,Manutenção em quadro de distribuição,Mão de Obra,1,"263,97","263,97"
+937,378,Troca de disjuntor bipolar,PARTS,3,"R$ 68,19",R$ 204.57
+938,378,Troca de fiação do chuveiro,Serviço,1,"153,87",R$ 153.87
+939,379,Limpeza pós-obra pesada,LABOR,1,R$406,"406,52"
+940,380,Carga de gás refrigerante R410A,Peca,2,198.18,396.36
+941,380,Instalação de split 12000 BTUs,Mao de Obra,1,487.67,"487,67"
+942,381,Limpeza de vidros e janelas em altura,Mão de Obra,1,"212,97",212.97
+943,381,Kit de produtos químicos profissionais,Material,1,"91,30",R$ 91.30
+944,382,Ajuste de portas e gavetas de armário,Mao de Obra,1,157.95,R$157
+945,382,Instalação de prateleiras suspensas,Mao de Obra,1,"130,56",R$ 130.56
+946,383,Kit de produtos químicos profissionais,Peça,3,R$88,"266,97"
+947,383,Limpeza de vidros e janelas em altura,Mão de Obra,1,"211,19",211.19
+948,383,Limpeza pós-obra pesada,Mao de Obra,1,"R$ 369,38",369.38
+949,384,Higienização de estofados e carpetes,Mão de Obra,1,"R$ 285,04","285,04"
+950,384,Limpeza pós-obra pesada,Mão de Obra,1,355.55,R$355
+951,385,Suporte metálico condensadora,Peça,3,R$ 95.11,"285,33"
+952,385,Higienização completa de ar condicionado,Mão de Obra,1,"205,46","205,46"
+953,385,Instalação de split 12000 BTUs,Serviço,1,R$414,R$ 414.63
+954,386,Instalação de split 12000 BTUs,Mão de Obra,1,R$414,"414,95"
+955,386,Carga de gás refrigerante R410A,Peca,1,R$ 188.11,R$188
+956,386,Higienização completa de ar condicionado,Mao de Obra,1,"R$ 227,88",227.88
+957,386,Suporte metálico condensadora,PARTS,1,85.06,R$85
+958,387,Carga de gás refrigerante R410A,Peça,3,R$171,513.69
+959,387,Instalação de split 12000 BTUs,Mão de Obra,1,"420,35","420,35"
+960,387,Higienização completa de ar condicionado,LABOR,1,237.55,R$237
+961,388,Manutenção em quadro de distribuição,LABOR,1,"R$ 283,07","283,07"
+962,389,Massa corrida e lixa,Peça,3,80.62,241.86
+963,389,Pintura de teto e paredes,LABOR,1,R$340,340.38
+964,390,Higienização completa de ar condicionado,Serviço,1,"R$ 199,87","199,87"
+965,391,Massa corrida e lixa,Peca,3,80.99,R$ 242.97
+966,391,Aplicação de verniz em esquadrias,Mao de Obra,1,184.22,"R$ 184,22"
+967,392,Kit de corrediças telescópicas,PARTS,1,55.45,55.45
+968,392,Instalação de prateleiras suspensas,Mão de Obra,1,R$ 127.52,"R$ 127,52"
+969,392,Ajuste de portas e gavetas de armário,Mão de Obra,1,179.99,179.99
+970,392,Dobradiças com amortecedor,Peca,1,"R$ 36,62","R$ 36,62"
+971,393,Instalação de split 12000 BTUs,Mão de Obra,1,427.63,R$427
+972,393,Higienização completa de ar condicionado,Mão de Obra,1,"R$ 242,48",R$242
+973,393,Suporte metálico condensadora,PARTS,1,R$ 89.87,"R$ 89,87"
+974,393,Carga de gás refrigerante R410A,Peca,1,202.20,R$202
+975,394,Higienização de estofados e carpetes,Serviço,1,286.10,286.10
+976,394,Limpeza de vidros e janelas em altura,LABOR,1,R$ 223.70,R$223
+977,394,Kit de produtos químicos profissionais,Material,2,R$ 87.90,"R$ 175,80"
+978,395,Kit de produtos químicos profissionais,Peca,3,107.63,R$322
+979,395,Higienização de estofados e carpetes,LABOR,1,R$237,237.68
+980,395,Limpeza de vidros e janelas em altura,Mao de Obra,1,"R$ 226,85","R$ 226,85"
+981,396,Pequeno reparo em alvenaria e reboco,LABOR,1,"264,34","R$ 264,34"
+982,396,Saco de cimento e argamassa,PARTS,2,R$57,115.44
+983,397,Lata de tinta acrílica fosca 18L,Material,1,"R$ 330,73",R$330
+984,398,Suporte metálico condensadora,PARTS,1,R$81,"R$ 81,56"
+985,398,Instalação de split 12000 BTUs,LABOR,1,"R$ 430,55",R$ 430.55
+986,398,Higienização completa de ar condicionado,LABOR,1,"R$ 242,69",R$ 242.69
+987,399,Kit de corrediças telescópicas,Peça,2,68.08,"136,16"
+988,400,Assentamento de piso cerâmico,Serviço,1,"337,53","R$ 337,53"
+989,401,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,"266,18",R$266
+990,401,Saco de cimento e argamassa,PARTS,2,"R$ 53,63","107,26"
+991,401,Assentamento de piso cerâmico,Serviço,1,334.09,"R$ 334,09"
+992,401,Revestimento cerâmico metro quadrado,PARTS,2,R$ 69.73,R$ 139.46
+993,402,Revestimento cerâmico metro quadrado,Material,3,77.51,"R$ 232,53"
+994,402,Saco de cimento e argamassa,Peca,1,R$57,57.11
+995,402,Pequeno reparo em alvenaria e reboco,Mao de Obra,1,R$ 241.43,241.43
+996,403,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$198,"R$ 198,08"
+997,403,Kit de produtos químicos profissionais,Peca,1,"92,79",R$ 92.79
+998,403,Limpeza pós-obra pesada,LABOR,1,384.16,"R$ 384,16"
+999,404,Troca de disjuntor bipolar,Peca,2,"70,95",141.90
+1000,404,Instalação de luminária plafon,Mão de Obra,1,R$ 83.86,R$83
+1001,404,Manutenção em quadro de distribuição,Mão de Obra,1,"R$ 297,92","R$ 297,92"
+1002,405,Saco de cimento e argamassa,Peça,3,"59,38","R$ 178,14"
+1003,405,Assentamento de piso cerâmico,Serviço,1,"R$ 275,81",R$275
+1004,405,Revestimento cerâmico metro quadrado,Peca,1,R$67,"67,15"
+1005,406,Limpeza de vidros e janelas em altura,LABOR,1,"188,02",R$ 188.02
+1006,406,Limpeza pós-obra pesada,LABOR,1,"R$ 428,63",R$428
+1007,406,Kit de produtos químicos profissionais,Peca,1,R$ 104.69,104.69
+1008,407,Limpeza de vidros e janelas em altura,Serviço,1,"212,96","212,96"
+1009,408,Limpeza de vidros e janelas em altura,LABOR,1,"208,02",208.02
+1010,408,Limpeza pós-obra pesada,Serviço,1,399.50,R$ 399.50
+1011,408,Kit de produtos químicos profissionais,Peça,3,R$105,R$ 315.48
+1012,408,Higienização de estofados e carpetes,Serviço,1,R$284,R$ 284.47
+1013,409,Suporte metálico condensadora,Peca,1,R$79,79.07
+1014,409,Carga de gás refrigerante R410A,PARTS,3,166.54,"R$ 499,62"
+1015,409,Instalação de split 12000 BTUs,LABOR,1,R$ 482.63,R$482
+1016,409,Higienização completa de ar condicionado,Serviço,1,245.68,"245,68"
+1017,410,Higienização completa de ar condicionado,Serviço,1,250.25,250.25
+1018,411,Instalação de tomada 20A,PARTS,2,R$25,R$51
+1019,411,Troca de fiação do chuveiro,Serviço,1,"168,65","168,65"
+1020,411,Troca de disjuntor bipolar,Peça,2,R$ 63.68,"R$ 127,36"
+1021,411,Instalação de luminária plafon,Mão de Obra,1,99.31,R$99
+1022,412,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$ 180.98,"R$ 180,98"
+1023,412,Instalação de prateleiras suspensas,Mão de Obra,1,"R$ 123,72",R$123
+1024,412,Kit de corrediças telescópicas,Peça,1,"R$ 68,40",68.40
+1025,413,Instalação de split 12000 BTUs,Serviço,1,"505,00","R$ 505,00"
+1026,414,Higienização de estofados e carpetes,LABOR,1,292.00,"R$ 292,00"
+1027,415,Instalação de prateleiras suspensas,Serviço,1,"143,45",R$ 143.45
+1028,415,Kit de corrediças telescópicas,PARTS,1,R$63,R$ 63.52
+1029,415,Dobradiças com amortecedor,Material,1,R$40,R$40
+1030,416,Limpeza pós-obra pesada,Serviço,1,R$388,"388,57"
+1031,416,Limpeza de vidros e janelas em altura,Mao de Obra,1,"R$ 207,17",R$ 207.17
+1032,416,Higienização de estofados e carpetes,Mao de Obra,1,241.30,241.30
+1033,417,Dobradiças com amortecedor,Material,3,"R$ 38,15",R$114
+1034,417,Kit de corrediças telescópicas,Peca,2,57.92,115.84
+1035,417,Instalação de prateleiras suspensas,Serviço,1,143.29,"143,29"
+1036,417,Ajuste de portas e gavetas de armário,Mao de Obra,1,180.49,R$ 180.49
+1037,418,Manutenção em quadro de distribuição,LABOR,1,318.52,"R$ 318,52"
+1038,418,Troca de disjuntor bipolar,Peca,3,R$63,"R$ 191,76"
+1039,419,Limpeza pós-obra pesada,Mão de Obra,1,"R$ 381,27","R$ 381,27"
+1040,419,Limpeza de vidros e janelas em altura,LABOR,1,R$222,222.27
+1041,419,Higienização de estofados e carpetes,LABOR,1,R$ 285.44,"285,44"
+1042,420,Substituição de reparo de descarga,Material,1,"R$ 46,18","R$ 46,18"
+1043,421,Instalação de luminária plafon,Mão de Obra,1,"R$ 87,17","87,17"
+1044,421,Troca de disjuntor bipolar,Material,3,"67,86",203.58
+1045,421,Instalação de tomada 20A,Material,1,R$23,"23,89"
+1046,422,Instalação de tomada 20A,PARTS,2,"24,81","49,62"
+1047,422,Troca de disjuntor bipolar,PARTS,1,"R$ 71,66",R$71
+1048,422,Manutenção em quadro de distribuição,Serviço,1,R$263,R$ 263.85
+1049,422,Instalação de luminária plafon,Serviço,1,R$82,82.89
+1050,423,Manutenção em quadro de distribuição,Mão de Obra,1,R$270,270.77
+1051,423,Instalação de luminária plafon,Mao de Obra,1,R$ 93.28,"93,28"
+1052,423,Troca de disjuntor bipolar,PARTS,2,"R$ 70,02",140.04
+1053,424,Troca de sifão sanfonado,PARTS,2,27.07,"54,14"
+1054,424,Desentupimento de ralo ou pia,Mao de Obra,1,R$194,"194,40"
+1055,424,Substituição de reparo de descarga,Peça,3,R$ 50.51,"151,53"
+1056,424,Reparo de vazamento em tubulação,Mão de Obra,1,R$257,"257,70"
+1057,425,Limpeza pós-obra pesada,LABOR,1,"436,36",R$ 436.36
+1058,425,Kit de produtos químicos profissionais,Material,1,"101,98","R$ 101,98"
+1059,425,Limpeza de vidros e janelas em altura,Serviço,1,R$183,R$ 183.06
+1060,425,Higienização de estofados e carpetes,Mão de Obra,1,"238,34","R$ 238,34"
+1061,426,Massa corrida e lixa,PARTS,2,R$ 70.84,R$141
+1062,427,Dobradiças com amortecedor,Peca,2,"R$ 44,75","R$ 89,50"
+1063,427,Kit de corrediças telescópicas,Material,1,61.68,61.68
+1064,428,Kit de produtos químicos profissionais,Peca,1,R$ 107.96,107.96
+1065,428,Higienização de estofados e carpetes,Serviço,1,"270,43","R$ 270,43"
+1066,428,Limpeza de vidros e janelas em altura,Serviço,1,"207,90",R$ 207.90
+1067,429,Carga de gás refrigerante R410A,Peça,2,"R$ 178,24",R$356
+1068,429,Instalação de split 12000 BTUs,LABOR,1,"439,92","439,92"
+1069,430,Pequeno reparo em alvenaria e reboco,Serviço,1,275.83,R$ 275.83
+1070,431,Aplicação de verniz em esquadrias,LABOR,1,"R$ 210,62",210.62
+1071,432,Assentamento de piso cerâmico,Serviço,1,271.06,"R$ 271,06"
+1072,432,Pequeno reparo em alvenaria e reboco,Mão de Obra,1,"219,90","R$ 219,90"
+1073,433,Lata de tinta acrílica fosca 18L,PARTS,3,R$354,1064.67
+1074,433,Massa corrida e lixa,PARTS,1,R$ 69.68,"R$ 69,68"
+1075,433,Pintura de teto e paredes,LABOR,1,R$ 331.25,"R$ 331,25"
+1076,434,Kit de produtos químicos profissionais,Peca,1,92.13,R$ 92.13
+1077,434,Limpeza pós-obra pesada,Mao de Obra,1,R$ 421.35,R$ 421.35
+1078,434,Higienização de estofados e carpetes,Mao de Obra,1,297.65,"297,65"
+1079,435,Kit de corrediças telescópicas,Peça,2,56.34,"112,68"
+1080,435,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$ 169.84,"169,84"
+1081,436,Limpeza de vidros e janelas em altura,Mao de Obra,1,"203,36",R$203
+1082,436,Kit de produtos químicos profissionais,PARTS,2,"101,13","R$ 202,26"
+1083,437,Suporte metálico condensadora,Material,3,88.74,266.22
+1084,437,Carga de gás refrigerante R410A,Peca,1,R$173,"173,37"
+1085,437,Instalação de split 12000 BTUs,Serviço,1,"459,29","R$ 459,29"
+1086,437,Higienização completa de ar condicionado,Mão de Obra,1,R$251,"R$ 251,39"
+1087,438,Massa corrida e lixa,PARTS,3,"R$ 73,75","221,25"
+1088,438,Lata de tinta acrílica fosca 18L,Material,1,352.12,R$ 352.12
+1089,439,Limpeza pós-obra pesada,Mao de Obra,1,"R$ 394,76",394.76
+1090,439,Higienização de estofados e carpetes,LABOR,1,244.36,R$244
+1091,440,Instalação de split 12000 BTUs,Mao de Obra,1,465.09,R$465
+1092,440,Higienização completa de ar condicionado,Mão de Obra,1,R$ 199.48,"199,48"
+1093,440,Suporte metálico condensadora,PARTS,2,R$83,R$167
+1094,441,Revestimento cerâmico metro quadrado,PARTS,3,"77,37",232.11
+1095,441,Pequeno reparo em alvenaria e reboco,Serviço,1,R$226,"R$ 226,77"
+1096,441,Assentamento de piso cerâmico,LABOR,1,"304,87","R$ 304,87"
+1097,441,Saco de cimento e argamassa,PARTS,3,R$ 61.36,"184,08"
+1098,442,Kit de corrediças telescópicas,Material,3,"59,59",R$178
+1099,442,Ajuste de portas e gavetas de armário,LABOR,1,R$ 182.87,182.87
+1100,442,Dobradiças com amortecedor,PARTS,3,R$ 43.60,"R$ 130,80"
+1101,443,Assentamento de piso cerâmico,Mao de Obra,1,"288,92","R$ 288,92"
+1102,444,Suporte metálico condensadora,Material,1,91.94,"91,94"
+1103,444,Carga de gás refrigerante R410A,Peça,2,R$205,R$411
+1104,444,Higienização completa de ar condicionado,LABOR,1,"223,21","223,21"
+1105,444,Instalação de split 12000 BTUs,LABOR,1,409.31,R$409
+1106,445,Kit de corrediças telescópicas,Peça,3,"R$ 61,71","185,13"
+1107,445,Instalação de prateleiras suspensas,Mão de Obra,1,135.63,"135,63"
+1108,445,Dobradiças com amortecedor,Peça,3,"42,89",R$128
+1109,445,Ajuste de portas e gavetas de armário,Serviço,1,R$ 170.86,"170,86"
+1110,446,Kit de corrediças telescópicas,Peca,2,R$57,114.64
+1111,446,Ajuste de portas e gavetas de armário,Mao de Obra,1,R$167,167.52
+1112,447,Pintura de teto e paredes,Mao de Obra,1,"R$ 370,25",R$ 370.25
+1113,447,Massa corrida e lixa,Peca,3,"85,97","257,91"
+1114,447,Lata de tinta acrílica fosca 18L,Material,2,"R$ 324,12",R$ 648.24
+1115,447,Aplicação de verniz em esquadrias,Mão de Obra,1,R$200,"200,68"
+1116,448,Limpeza pós-obra pesada,Mão de Obra,1,R$ 396.22,396.22
+1117,448,Kit de produtos químicos profissionais,Peça,3,95.20,R$285
+1118,449,Revestimento cerâmico metro quadrado,Peca,2,63.06,R$ 126.12
+1119,449,Pequeno reparo em alvenaria e reboco,LABOR,1,257.00,R$257
+1120,450,Ajuste de portas e gavetas de armário,Mão de Obra,1,R$168,168.39
+1121,451,Carga de gás refrigerante R410A,Peça,3,R$182,548.25
+1122,451,Instalação de split 12000 BTUs,Mão de Obra,1,516.34,R$516
+1123,451,Higienização completa de ar condicionado,Mao de Obra,1,R$ 233.28,R$ 233.28
+1124,452,Manutenção em quadro de distribuição,LABOR,1,297.30,297.30
+1125,453,Limpeza pós-obra pesada,LABOR,1,R$ 422.47,"422,47"
+1126,454,Assentamento de piso cerâmico,Serviço,1,"292,15",292.15
+1127,454,Revestimento cerâmico metro quadrado,Peca,3,R$67,"R$ 202,53"
+1128,455,Instalação de luminária plafon,Mão de Obra,1,R$ 87.63,R$87
+1129,455,Manutenção em quadro de distribuição,Serviço,1,"272,46",R$ 272.46
+1130,455,Troca de fiação do chuveiro,Mão de Obra,1,R$136,"136,05"
+1131,456,Aplicação de verniz em esquadrias,Serviço,1,"R$ 179,33","R$ 179,33"
+1132,456,Pintura de teto e paredes,Mao de Obra,1,R$ 344.96,R$ 344.96
+1133,456,Lata de tinta acrílica fosca 18L,PARTS,1,R$ 310.27,"310,27"
+1134,456,Massa corrida e lixa,PARTS,2,R$76,R$ 152.22
+1135,457,Massa corrida e lixa,Peça,3,R$ 70.93,212.79
+1136,457,Aplicação de verniz em esquadrias,Mao de Obra,1,R$179,"179,43"
+1137,458,Instalação de torneira monocomando,LABOR,1,R$ 131.70,131.70
+1138,459,Instalação de luminária plafon,Mão de Obra,1,R$98,R$98
+1139,460,Dobradiças com amortecedor,Peca,3,41.61,"R$ 124,83"
+1140,460,Instalação de prateleiras suspensas,Mão de Obra,1,148.76,"R$ 148,76"
+1141,460,Ajuste de portas e gavetas de armário,Serviço,1,156.77,R$ 156.77
+1142,461,Dobradiças com amortecedor,Peca,1,"39,07",R$39
+1143,462,Ajuste de portas e gavetas de armário,Serviço,1,"183,25",R$ 183.25
+1144,462,Instalação de prateleiras suspensas,Serviço,1,"147,32","147,32"
+1145,463,Limpeza de vidros e janelas em altura,Mão de Obra,1,197.68,"197,68"
+1146,464,Dobradiças com amortecedor,Peca,3,"R$ 40,40","R$ 121,20"
+1147,464,Ajuste de portas e gavetas de armário,Mao de Obra,1,153.73,R$153
+1148,465,Assentamento de piso cerâmico,Mão de Obra,1,"R$ 278,33","278,33"
+1149,465,Revestimento cerâmico metro quadrado,Peça,3,R$ 70.24,R$210
+1150,465,Pequeno reparo em alvenaria e reboco,Mão de Obra,1,R$233,"R$ 233,93"
+1151,466,Ajuste de portas e gavetas de armário,Serviço,1,R$ 151.37,151.37
+1152,466,Dobradiças com amortecedor,Peca,2,"39,33",R$78
+1153,466,Kit de corrediças telescópicas,Peça,3,"R$ 67,99",203.97
+1154,467,Pintura de teto e paredes,LABOR,1,R$379,"R$ 379,26"
+1155,467,Aplicação de verniz em esquadrias,LABOR,1,R$196,196.26
+1156,467,Massa corrida e lixa,Peça,3,"R$ 79,69",239.07
+1157,467,Lata de tinta acrílica fosca 18L,Peça,2,"325,26","R$ 650,52"
+1158,468,Higienização de estofados e carpetes,Mão de Obra,1,R$243,"243,78"
+1159,468,Limpeza pós-obra pesada,Mão de Obra,1,R$392,"392,57"
+1160,469,Higienização de estofados e carpetes,Mão de Obra,1,R$ 290.59,R$ 290.59
+1161,470,Aplicação de verniz em esquadrias,Mão de Obra,1,172.21,"R$ 172,21"
+1162,471,Limpeza pós-obra pesada,Mao de Obra,1,"431,37",431.37
+1163,471,Kit de produtos químicos profissionais,PARTS,1,R$90,"90,50"
+1164,472,Higienização de estofados e carpetes,Mao de Obra,1,R$ 262.22,"R$ 262,22"
+1165,472,Limpeza pós-obra pesada,Serviço,1,403.79,"R$ 403,79"
+1166,472,Kit de produtos químicos profissionais,Peca,2,"R$ 102,83",R$ 205.66
+1167,473,Higienização de estofados e carpetes,Mão de Obra,1,274.14,R$ 274.14
+1168,473,Limpeza pós-obra pesada,Mão de Obra,1,R$ 358.59,"358,59"
+1169,474,Substituição de reparo de descarga,Material,2,"R$ 40,82",R$ 81.64
+1170,475,Carga de gás refrigerante R410A,Material,2,R$ 200.53,R$401
+1171,475,Instalação de split 12000 BTUs,LABOR,1,"496,06",496.06
+1172,475,Suporte metálico condensadora,Peca,2,R$ 95.62,"191,24"
+1173,475,Higienização completa de ar condicionado,Mao de Obra,1,R$234,"R$ 234,10"
+1174,476,Pintura de teto e paredes,Mão de Obra,1,"334,79","334,79"
+1175,476,Aplicação de verniz em esquadrias,Serviço,1,R$204,R$204
+1176,476,Lata de tinta acrílica fosca 18L,Peca,3,R$ 334.17,"1.002,51"
+1177,476,Massa corrida e lixa,Peça,2,R$74,"R$ 149,06"
+1178,477,Limpeza de vidros e janelas em altura,Serviço,1,180.59,"180,59"
+1179,477,Limpeza pós-obra pesada,Serviço,1,359.84,R$ 359.84
+1180,478,Assentamento de piso cerâmico,Serviço,1,R$330,330.52
+1181,478,Revestimento cerâmico metro quadrado,Peca,3,R$64,"194,07"
+1182,479,Higienização de estofados e carpetes,Mao de Obra,1,"242,21",242.21
+1183,480,Reparo de vazamento em tubulação,Mao de Obra,1,R$275,R$ 275.02
+1184,480,Substituição de reparo de descarga,Peça,3,"51,16",R$ 153.48
+1185,481,Aplicação de verniz em esquadrias,Mao de Obra,1,"R$ 205,27","R$ 205,27"
+1186,481,Massa corrida e lixa,Peca,2,R$ 80.78,R$161
+1187,481,Pintura de teto e paredes,LABOR,1,"R$ 366,97",366.97
+1188,481,Lata de tinta acrílica fosca 18L,Peça,1,R$ 299.50,299.50
+1189,482,Limpeza de vidros e janelas em altura,Mao de Obra,1,"R$ 213,61","R$ 213,61"
+1190,482,Kit de produtos químicos profissionais,PARTS,3,R$92,278.67
+1191,483,Higienização de estofados e carpetes,Serviço,1,"272,02",R$ 272.02
+1192,483,Kit de produtos químicos profissionais,Peca,3,R$ 87.95,263.85
+1193,483,Limpeza pós-obra pesada,Serviço,1,421.49,"R$ 421,49"
+1194,483,Limpeza de vidros e janelas em altura,Mao de Obra,1,"211,90","211,90"
+1195,484,Limpeza pós-obra pesada,Serviço,1,R$351,R$351
+1196,484,Higienização de estofados e carpetes,Serviço,1,R$288,R$288
+1197,484,Limpeza de vidros e janelas em altura,Serviço,1,"R$ 223,52",R$223
+1198,484,Kit de produtos químicos profissionais,PARTS,1,R$99,"R$ 99,52"
+1199,485,Instalação de prateleiras suspensas,LABOR,1,"135,43","R$ 135,43"
+1200,485,Ajuste de portas e gavetas de armário,Serviço,1,"R$ 155,69",155.69
+1201,485,Kit de corrediças telescópicas,Peca,2,"59,38",R$ 118.76
+1202,485,Dobradiças com amortecedor,PARTS,2,"40,46",80.92
+1203,486,Higienização de estofados e carpetes,Mao de Obra,1,"R$ 254,57","R$ 254,57"
+1204,486,Limpeza de vidros e janelas em altura,Mao de Obra,1,R$211,211.97
+1205,486,Kit de produtos químicos profissionais,Material,3,R$ 89.92,"269,76"
+1206,487,Troca de disjuntor bipolar,Peca,1,R$67,R$67
+1207,488,Higienização de estofados e carpetes,LABOR,1,"293,88",R$293
+1208,488,Limpeza pós-obra pesada,LABOR,1,"396,16",R$ 396.16
+1209,488,Kit de produtos químicos profissionais,Peça,2,R$105,R$ 210.24
+1210,489,Kit de produtos químicos profissionais,Material,1,108.41,108.41
+1211,489,Limpeza pós-obra pesada,Mão de Obra,1,394.85,R$ 394.85
+1212,490,Kit de produtos químicos profissionais,Peça,2,R$105,R$211
+1213,490,Higienização de estofados e carpetes,Serviço,1,R$242,"242,37"
+1214,490,Limpeza de vidros e janelas em altura,Mão de Obra,1,"185,24",R$185
+1215,491,Lata de tinta acrílica fosca 18L,PARTS,1,"342,56",R$342
+1216,491,Massa corrida e lixa,PARTS,2,R$85,170.52
+1217,491,Pintura de teto e paredes,Mão de Obra,1,352.70,R$ 352.70
+1218,491,Aplicação de verniz em esquadrias,Mao de Obra,1,R$202,"202,44"
+1219,492,Saco de cimento e argamassa,Peça,3,R$ 55.19,R$ 165.57
+1220,492,Pequeno reparo em alvenaria e reboco,Mão de Obra,1,R$ 274.79,"R$ 274,79"
+1221,492,Assentamento de piso cerâmico,Serviço,1,"R$ 318,71","318,71"
+1222,493,Ajuste de portas e gavetas de armário,Serviço,1,"158,21",158.21
+1223,494,Lata de tinta acrílica fosca 18L,Peca,3,"R$ 292,73",R$ 878.19
+1224,495,Limpeza pós-obra pesada,Mão de Obra,1,R$351,"351,21"
+1225,495,Higienização de estofados e carpetes,Serviço,1,R$ 271.31,R$271
+1226,495,Kit de produtos químicos profissionais,Material,1,"R$ 104,84",R$104
+1227,495,Limpeza de vidros e janelas em altura,LABOR,1,"181,94","181,94"
+1228,496,Reparo de vazamento em tubulação,LABOR,1,"266,79",R$ 266.79
+1229,496,Desentupimento de ralo ou pia,Mão de Obra,1,178.46,R$ 178.46
+1230,496,Troca de sifão sanfonado,PARTS,2,27.31,R$54
+1231,496,Substituição de reparo de descarga,PARTS,1,"50,04",R$50
+1232,497,Instalação de split 12000 BTUs,LABOR,1,"407,68",R$407
+1233,497,Suporte metálico condensadora,Peca,2,89.46,"178,92"
+1234,497,Carga de gás refrigerante R410A,PARTS,3,R$ 193.45,"R$ 580,35"
+1235,497,Higienização completa de ar condicionado,Mão de Obra,1,"214,89","R$ 214,89"
+1236,498,Massa corrida e lixa,Peça,1,R$ 69.35,"69,35"
+1237,498,Pintura de teto e paredes,Mão de Obra,1,321.38,R$ 321.38
+1238,498,Aplicação de verniz em esquadrias,LABOR,1,"R$ 198,13",198.13
+1239,498,Lata de tinta acrílica fosca 18L,PARTS,1,"360,03","R$ 360,03"
+1240,499,Pintura de teto e paredes,Serviço,1,375.40,375.40
+1241,499,Lata de tinta acrílica fosca 18L,Peça,2,355.41,"710,82"
+1242,499,Massa corrida e lixa,Material,3,"R$ 67,70",203.10
+1243,499,Aplicação de verniz em esquadrias,Mão de Obra,1,"R$ 177,12","R$ 177,12"
+1244,500,Substituição de reparo de descarga,Peça,2,"R$ 49,76",R$99

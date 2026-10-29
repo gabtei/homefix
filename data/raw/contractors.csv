@@ -1,0 +1,31 @@
+contractor_id,contractor_name,specialty,hourly_rate,experience_years,city,state,is_active
+1,Priscila Andrade,MARCENARIA,"R$ 131,61",8,Ribeirão Preto,SP,true
+2,Renata Silva,ALVENARIA,"R$ 75,19",3,São José dos Campos,SP,true
+3,Carla Souza,Limpeza,128.89,17,Osasco,SP,TRUE
+4,Mateus Machado,Climatização,158.65,17,Campinas,SP,TRUE
+5,Beatriz Rodrigues,LIMPEZA,"R$ 173,90",9,Campinas,SP,1
+6,Rafael Moreira,marcenaria,114.06,11,Santo André,SP,TRUE
+7,Rodrigo Moreira,Hidraulica,"R$ 91,76",7,Sorocaba,SP,TRUE
+8,Gabriel Silva,climatizacao,142.72,11,São Paulo,SP,Sim
+9,Daniela Oliveira,Alvenaria,R$170,23,Sorocaba,SP,true
+10,Beatriz Lima,Limpeza,R$ 68.57,11,Ribeirão Preto,SP,1
+11,Renata Nascimento,CLIMATIZACAO,120.06,16,Campinas,SP,1
+12,Diego Barbosa,Pintura,R$70,20,São Paulo,SP,Sim
+13,Jessica Santos,Limpeza,116.46,10,Santos,SP,1
+14,Carla Oliveira,CLIMATIZACAO,"109,00",23,Campinas,SP,Sim
+15,Alexandre Nascimento,CLIMATIZACAO,139.51,19,São Paulo,SP,Sim
+16,Mateus Costa,eletrica,"R$ 163,79",23,São José dos Campos,SP,TRUE
+17,Thiago Soares,PINTURA,150.77,3,Sorocaba,SP,true
+18,Leonardo Almeida,alvenaria,R$74,9,Santos,SP,TRUE
+19,Fabio Carvalho,Eletrica,"R$ 179,07",16,Campinas,SP,true
+20,Carla Nascimento,PINTURA,144.65,17,Osasco,SP,true
+21,Eduardo Alves,MARCENARIA,R$ 149.56,4,Ribeirão Preto,SP,1
+22,Patricia Nunes,marcenaria,"158,47",25,Ribeirão Preto,SP,1
+23,Beatriz Almeida,marcenaria,R$101,19,Santo André,SP,Sim
+24,Thiago Nascimento,hidraulica,88.03,3,São Bernardo do Campo,SP,1
+25,Eduardo Dias,LIMPEZA,177.70,3,Santos,SP,Sim
+26,Rodrigo Machado,limpeza,71.97,2,Santos,SP,true
+27,Bruno Lopes,limpeza,100.63,22,Campinas,SP,1
+28,Diego Rocha,alvenaria,"R$ 164,69",21,Campinas,SP,Sim
+29,Rafael Andrade,eletrica,"R$ 177,40",16,Santos,SP,TRUE
+30,Carlos Costa,Limpeza,"95,20",15,Santos,SP,1

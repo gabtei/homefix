@@ -1,0 +1,101 @@
+client_id,client_name,client_email,client_phone,client_city,client_state,signup_date
+1,Juliana Silva,juliana.silva1@exemplo.com.br,(16) 94691-3810,Sorocaba,SP,2023-03-13
+2,Sabrina Oliveira,sabrina.oliveira2@exemplo.com.br,(15) 96662-9388,São Paulo,SP,17/02/2023
+3,Rafael Soares,rafael.soares3@exemplo.com.br,(15) 91356-1597,São José dos Campos,SP,03/08/2023
+4,Gustavo Vieira,gustavo.vieira4@exemplo.com.br,(13) 91087-2248,Santo André,SP,06-24-2023
+5,Beatriz Alves,beatriz.alves5@exemplo.com.br,(19) 95517-6955,Campinas,SP,2023-07-14
+6,Marcelo Machado,marcelo.machado6@exemplo.com.br,13991030736,São Paulo,SP,2024/01/09
+7,Sabrina Souza,sabrina.souza7@exemplo.com.br,14920576383,São Bernardo do Campo,SP,23/10/2023
+8,Bruno Santos,bruno.santos8@exemplo.com.br,16940587988,Campinas,SP,13/03/2024
+9,Rodrigo Martins,rodrigo.martins9@exemplo.com.br,13970855700,Santos,SP,07-09-2023
+10,Fernanda Dias,fernanda.dias10@exemplo.com.br,(13) 99697-7837,Santos,SP,01/10/2023
+11,Gabriel Almeida,gabriel.almeida11@exemplo.com.br,(14) 94623-1783,São Bernardo do Campo,SP,2024-03-07
+12,Rafael Marques,rafael.marques12@exemplo.com.br,11952339391,Ribeirão Preto,SP,03/02/2023
+13,Jessica Nascimento,jessica.nascimento13@exemplo.com.br,13938538251,Santo André,SP,2023/11/26
+14,Beatriz Lima,beatriz.lima14@exemplo.com.br,12943101783,Santo André,SP,2023/10/26
+15,Carolina Pereira,carolina.pereira15@exemplo.com.br,12978387461,Campinas,SP,2024-01-22
+16,Juliana Rodrigues,juliana.rodrigues16@exemplo.com.br,16931472420,Campinas,SP,2023/07/17
+17,Daniela Soares,daniela.soares17@exemplo.com.br,(13) 98425-2722,Campinas,SP,12-16-2023
+18,Patricia Souza,patricia.souza18@exemplo.com.br,(13) 96835-3204,Osasco,SP,01-02-2023
+19,Andre Moreira,andre.moreira19@exemplo.com.br,(12) 97813-9880,Ribeirão Preto,SP,06/03/2024
+20,Beatriz Ribeiro,beatriz.ribeiro20@exemplo.com.br,(19) 93168-2744,São Bernardo do Campo,SP,2023-09-08
+21,Juliana Ribeiro,juliana.ribeiro21@exemplo.com.br,(19) 95127-3847,São Paulo,SP,2023-05-04
+22,Camila Andrade,camila.andrade22@exemplo.com.br,(14) 91928-9546,Santos,SP,2023/12/04
+23,Fabio Ferreira,fabio.ferreira23@exemplo.com.br,13980823176,Sorocaba,SP,04/10/2023
+24,Renata Martins,renata.martins24@exemplo.com.br,16997225156,Osasco,SP,2023/09/22
+25,Juliana Pereira,juliana.pereira25@exemplo.com.br,12918593410,São Paulo,SP,29/10/2023
+26,Rafael Silva,rafael.silva26@exemplo.com.br,(11) 99470-5205,Sorocaba,SP,2023-02-04
+27,Patricia Oliveira,patricia.oliveira27@exemplo.com.br,15941944441,Osasco,SP,20/04/2023
+28,Jessica Vieira,jessica.vieira28@exemplo.com.br,14942614537,Santo André,SP,2023-04-08
+29,Rodrigo Dias,rodrigo.dias29@exemplo.com.br,14957553014,Santo André,SP,2023-08-28
+30,Rodrigo Santos,rodrigo.santos30@exemplo.com.br,(14) 95554-0424,Sorocaba,SP,09/04/2023
+31,Sabrina Almeida,sabrina.almeida31@exemplo.com.br,(12) 96662-3995,Ribeirão Preto,SP,25/08/2023
+32,Bruno Almeida,bruno.almeida32@exemplo.com.br,(19) 98386-3413,São Paulo,SP,2023-11-30
+33,Camila Moreira,camila.moreira33@exemplo.com.br,(19) 94172-6318,Santo André,SP,2023/09/06
+34,Fernanda Machado,fernanda.machado34@exemplo.com.br,(14) 91786-9910,Santo André,SP,2023/01/02
+35,Mateus Nunes,mateus.nunes35@exemplo.com.br,19971070189,Santo André,SP,2023/12/23
+36,Beatriz Alves,beatriz.alves36@exemplo.com.br,(13) 93921-9319,São José dos Campos,SP,02-01-2023
+37,Mariana Santos,mariana.santos37@exemplo.com.br,(15) 97399-3471,São Paulo,SP,2023-09-18
+38,Larissa Oliveira,larissa.oliveira38@exemplo.com.br,(15) 91912-1552,Santo André,SP,03/03/2023
+39,Carlos Barbosa,carlos.barbosa39@exemplo.com.br,11966267415,Ribeirão Preto,SP,04-15-2023
+40,Aline Lima,aline.lima40@exemplo.com.br,14927566185,Osasco,SP,2023-06-11
+41,Lucas Almeida,lucas.almeida41@exemplo.com.br,(15) 98556-3727,Campinas,SP,03/10/2023
+42,Andre Lima,andre.lima42@exemplo.com.br,(12) 95684-3172,Sorocaba,SP,07-09-2023
+43,Gabriel Almeida,gabriel.almeida43@exemplo.com.br,19982909480,São José dos Campos,SP,01-05-2023
+44,Rodrigo Rodrigues,rodrigo.rodrigues44@exemplo.com.br,(13) 92549-2573,São José dos Campos,SP,03-21-2023
+45,Leonardo Barbosa,leonardo.barbosa45@exemplo.com.br,(12) 95602-0613,Ribeirão Preto,SP,2023/09/16
+46,Mateus Machado,mateus.machado46@exemplo.com.br,11922388090,Ribeirão Preto,SP,2023-01-23
+47,Patricia Moreira,patricia.moreira47@exemplo.com.br,12995511909,Santos,SP,2024/01/15
+48,Fabio Nascimento,fabio.nascimento48@exemplo.com.br,(14) 98528-3645,Campinas,SP,08/02/2023
+49,Sabrina Santos,sabrina.santos49@exemplo.com.br,(19) 95955-5330,Santo André,SP,2023-03-07
+50,Renata Ribeiro,renata.ribeiro50@exemplo.com.br,19915354599,Sorocaba,SP,16/12/2023
+51,Rodrigo Ribeiro,rodrigo.ribeiro51@exemplo.com.br,19985146293,Santos,SP,02/05/2023
+52,Larissa Carvalho,larissa.carvalho52@exemplo.com.br,11934073380,Santo André,SP,15/02/2024
+53,Priscila Ferreira,priscila.ferreira53@exemplo.com.br,19924508349,São Paulo,SP,2024/03/15
+54,Rafael Alves,rafael.alves54@exemplo.com.br,19971780854,Ribeirão Preto,SP,25/02/2024
+55,Rafael Silva,rafael.silva55@exemplo.com.br,16935921441,São Bernardo do Campo,SP,2023-05-23
+56,Priscila Ribeiro,priscila.ribeiro56@exemplo.com.br,16978371272,São José dos Campos,SP,2023-06-19
+57,Juliana Lima,juliana.lima57@exemplo.com.br,12987925434,São Paulo,SP,2023/02/25
+58,Marcelo Andrade,marcelo.andrade58@exemplo.com.br,19952101056,São José dos Campos,SP,2023/03/01
+59,Jessica Alves,jessica.alves59@exemplo.com.br,13915957459,São Paulo,SP,24/09/2023
+60,Carolina Carvalho,carolina.carvalho60@exemplo.com.br,11999152472,São Bernardo do Campo,SP,2023-12-06
+61,Renata Soares,renata.soares61@exemplo.com.br,13999508850,São Bernardo do Campo,SP,07-26-2023
+62,Fabio Rodrigues,fabio.rodrigues62@exemplo.com.br,12966431351,Santos,SP,11-12-2023
+63,Vanessa Fernandes,vanessa.fernandes63@exemplo.com.br,19910054484,Ribeirão Preto,SP,2023/04/18
+64,Diego Almeida,diego.almeida64@exemplo.com.br,(14) 96934-5683,São José dos Campos,SP,31/08/2023
+65,Camila Gomes,camila.gomes65@exemplo.com.br,15999100953,Campinas,SP,24/02/2024
+66,Renata Pereira,renata.pereira66@exemplo.com.br,(19) 93672-6767,São Paulo,SP,24/01/2023
+67,Vinicius Barbosa,vinicius.barbosa67@exemplo.com.br,19919774839,Santo André,SP,19/11/2023
+68,Eduardo Lopes,eduardo.lopes68@exemplo.com.br,(14) 94274-7037,São Paulo,SP,2024-01-20
+69,Tatiane Pereira,tatiane.pereira69@exemplo.com.br,12979519112,São Paulo,SP,13/10/2023
+70,Juliana Almeida,juliana.almeida70@exemplo.com.br,12972363359,Osasco,SP,2023/11/10
+71,Fabio Almeida,fabio.almeida71@exemplo.com.br,12973709724,Ribeirão Preto,SP,20/01/2024
+72,Priscila Moreira,priscila.moreira72@exemplo.com.br,19979967676,Sorocaba,SP,2023/05/21
+73,Bruno Nascimento,bruno.nascimento73@exemplo.com.br,13941473195,São Bernardo do Campo,SP,2023-06-13
+74,Felipe Rodrigues,felipe.rodrigues74@exemplo.com.br,(12) 96141-0126,Sorocaba,SP,2023/02/02
+75,Alexandre Costa,alexandre.costa75@exemplo.com.br,15972535301,São Paulo,SP,2023/04/16
+76,Eduardo Moreira,eduardo.moreira76@exemplo.com.br,15912621534,Osasco,SP,01-04-2023
+77,Renata Moreira,renata.moreira77@exemplo.com.br,(14) 96624-0084,Osasco,SP,04-23-2023
+78,Tatiane Lopes,tatiane.lopes78@exemplo.com.br,11962191530,Santo André,SP,06/01/2024
+79,Daniela Rodrigues,daniela.rodrigues79@exemplo.com.br,(15) 98168-8860,Santo André,SP,2023-10-31
+80,Camila Rocha,camila.rocha80@exemplo.com.br,14928213276,Santos,SP,01-26-2023
+81,Eduardo Costa,eduardo.costa81@exemplo.com.br,12971028710,São Bernardo do Campo,SP,2024/01/25
+82,Priscila Moreira,priscila.moreira82@exemplo.com.br,19966581473,Campinas,SP,2023-08-29
+83,Sabrina Santos,sabrina.santos83@exemplo.com.br,(13) 94009-4589,São Paulo,SP,2024-01-22
+84,Aline Alves,aline.alves84@exemplo.com.br,(19) 91273-5359,Sorocaba,SP,2023/03/06
+85,Juliana Vieira,juliana.vieira85@exemplo.com.br,12972415804,São Bernardo do Campo,SP,2023-03-27
+86,Gabriel Gomes,gabriel.gomes86@exemplo.com.br,(11) 98766-9750,Ribeirão Preto,SP,2023/10/22
+87,Vanessa Nascimento,vanessa.nascimento87@exemplo.com.br,(12) 92020-0074,Campinas,SP,12-23-2023
+88,Juliana Nunes,juliana.nunes88@exemplo.com.br,15915512205,São José dos Campos,SP,08-08-2023
+89,Bruno Soares,bruno.soares89@exemplo.com.br,(16) 95579-9273,Santo André,SP,2024/02/26
+90,Rodrigo Carvalho,rodrigo.carvalho90@exemplo.com.br,13995306788,Santos,SP,11/08/2023
+91,Renan Rocha,renan.rocha91@exemplo.com.br,13992666356,Osasco,SP,08-12-2023
+92,Diego Machado,diego.machado92@exemplo.com.br,12921631697,Osasco,SP,2023/05/05
+93,Jessica Barbosa,jessica.barbosa93@exemplo.com.br,16960867083,São Paulo,SP,09-11-2023
+94,Larissa Lopes,larissa.lopes94@exemplo.com.br,12957623800,São Bernardo do Campo,SP,05-24-2023
+95,Fabio Silva,fabio.silva95@exemplo.com.br,(15) 93564-3159,Sorocaba,SP,2024/01/04
+96,Carla Fernandes,carla.fernandes96@exemplo.com.br,19942255732,Osasco,SP,2023-08-18
+97,Camila Gomes,camila.gomes97@exemplo.com.br,(12) 96427-7800,Ribeirão Preto,SP,12-06-2023
+98,Vinicius Fernandes,vinicius.fernandes98@exemplo.com.br,15956138336,São José dos Campos,SP,06-19-2023
+99,Daniela Lima,daniela.lima99@exemplo.com.br,(13) 94374-2830,Campinas,SP,05/01/2024
+100,Diego Souza,diego.souza100@exemplo.com.br,(16) 98192-2443,Sorocaba,SP,2023/04/21
